@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClinicApplication2
+namespace ClinicApplication
 {
     internal class Drug
     {
