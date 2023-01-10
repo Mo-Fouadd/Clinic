@@ -8,9 +8,9 @@ namespace ClinicApplication
 {
     public abstract class Account
     {
-        string user;
-        string name;
-        string password;
+        public string user;
+        public string name;
+        public string password;
 
         public Account (string user, string password, string name)        {
             this.user = user;
