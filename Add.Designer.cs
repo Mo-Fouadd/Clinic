@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class Add
     {
@@ -298,6 +298,7 @@
             this.Name = "Add";
             this.Text = "Add";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Add_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

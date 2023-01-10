@@ -1,5 +1,4 @@
-﻿using ClinicApplication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace ClinicApplication
 {
     public partial class PatientEntity : Form
     {
@@ -37,6 +36,11 @@ namespace WindowsFormsApp3
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PatientEntity_Load(object sender, EventArgs e)
         {
 
         }

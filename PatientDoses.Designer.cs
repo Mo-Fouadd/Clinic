@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
-    partial class PatientJobs
+    partial class PatientDoses
     {
         /// <summary>
         /// Required designer variable.
@@ -94,10 +94,10 @@
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-124, 39);
+            this.label3.Location = new System.Drawing.Point(-311, 31);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(2049, 46);
+            this.label3.Size = new System.Drawing.Size(2768, 46);
             this.label3.TabIndex = 14;
             this.label3.Text = "Drop";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -144,7 +144,7 @@
             this.textBox1.Size = new System.Drawing.Size(785, 22);
             this.textBox1.TabIndex = 10;
             // 
-            // PatientJobs
+            // PatientDoses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,9 +159,10 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.MainMenu);
-            this.Name = "PatientJobs";
+            this.Name = "PatientDoses";
             this.Text = "PatientJobs";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PatientJobs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

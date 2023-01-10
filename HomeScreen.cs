@@ -7,9 +7,11 @@ namespace ClinicApplication
 
     public partial class HomeScreen : Form
     {
-        public HomeScreen()
+        Login login;
+        public HomeScreen(Login login)
         {
             InitializeComponent();
+            this.login = login;
         }
 
 
@@ -26,26 +28,21 @@ namespace ClinicApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            PatientDoses patientjobs = new PatientDoses(this);
+            patientjobs.Show();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Are_You_Sure frm= new Are_You_Sure(this);
+            Are_You_Sure frm= new Are_You_Sure(login);
             frm.Show();
         }
 
-        private void HomeScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Are_You_Sure frm = new Are_You_Sure(this);
-            frm.Show();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PatientJobs patientjobs = new PatientJobs(this);
-            patientjobs.Show();
-            this.Hide();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -57,9 +54,10 @@ namespace ClinicApplication
 
         private void button5_Click(object sender, EventArgs e)
         {
-            PotionAddition potionAddition = new PotionAddition(this);
+            MedicineAddition potionAddition = new MedicineAddition(this);
             potionAddition.Show();
             this.Hide();
         }
+
     }
 }

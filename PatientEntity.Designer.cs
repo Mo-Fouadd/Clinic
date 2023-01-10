@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class PatientEntity
     {
@@ -71,10 +71,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(-4, 29);
+            this.label1.Location = new System.Drawing.Point(-89, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1892, 38);
+            this.label1.Size = new System.Drawing.Size(2322, 38);
             this.label1.TabIndex = 6;
             this.label1.Text = "Register patient entity";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,6 +92,7 @@
             this.Name = "PatientEntity";
             this.Text = "PatientEntity";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PatientEntity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

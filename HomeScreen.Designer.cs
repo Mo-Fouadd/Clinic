@@ -83,13 +83,13 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(240, 40);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Add New Potion";
+            this.button5.Text = "Add New Medicine";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(867, 602);
+            this.Exit.Location = new System.Drawing.Point(867, 598);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(240, 40);
             this.Exit.TabIndex = 5;
@@ -124,7 +124,6 @@
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomeScreen_FormClosing);
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.ResumeLayout(false);
 
