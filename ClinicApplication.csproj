@@ -81,21 +81,17 @@
       <DependentUpon>Are_You_Sure.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctor.cs" />
-    <Compile Include="Drug.cs" />
-    <Compile Include="HomeScreen.cs">
+    <Compile Include="doses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeScreen.Designer.cs">
-      <DependentUpon>HomeScreen.cs</DependentUpon>
+    <Compile Include="doses.Designer.cs">
+      <DependentUpon>doses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Drug.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="Drop.cs" />
     <Compile Include="Job.cs" />
-    <Compile Include="NewDoses.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewDoses.Designer.cs">
-      <DependentUpon>NewDoses.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Loader.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="PatientEntity.cs">
       <SubType>Form</SubType>
@@ -124,35 +120,8 @@
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
     <Compile Include="Secretary.cs" />
-    <Compile Include="Visit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Visit.Designer.cs">
-      <DependentUpon>Visit.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Add.resx">
-      <DependentUpon>Add.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddOrSearch.resx">
-      <DependentUpon>AddOrSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Are_You_Sure.resx">
-      <DependentUpon>Are_You_Sure.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HomeScreen.resx">
-      <DependentUpon>HomeScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewDoses.resx">
-      <DependentUpon>NewDoses.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientEntity.resx">
-      <DependentUpon>PatientEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientJobs.resx">
-      <DependentUpon>PatientJobs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PotionAddition.resx">
-      <DependentUpon>PotionAddition.cs</DependentUpon>
+    <EmbeddedResource Include="doses.resx">
+      <DependentUpon>doses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
