@@ -9,13 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace ClinicApplication
 {
     public partial class Login : Form
     {
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Joke joke = new Joke();
+            joke.Show();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -25,11 +31,19 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //if(TextBox.1.text=="yehia-marwan@taymour.fouad") {
-            //    Form1 a = new Form1();
-            //    a.Show();
-            //}
+            HomeScreen home = new HomeScreen(this);
+            home.Show();
+            this.Hide();
+        }
 
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+           
+            }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

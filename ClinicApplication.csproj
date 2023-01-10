@@ -81,28 +81,22 @@
       <DependentUpon>Are_You_Sure.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctor.cs" />
-    <Compile Include="doses.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="doses.Designer.cs">
-      <DependentUpon>doses.cs</DependentUpon>
-    </Compile>
     <Compile Include="Drug.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Drop.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Job.cs" />
+    <Compile Include="Joke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joke.Designer.cs">
+      <DependentUpon>Joke.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loader.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -117,32 +111,56 @@
     <Compile Include="PatientEntity.Designer.cs">
       <DependentUpon>PatientEntity.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientJobs.cs">
+    <Compile Include="PatientDoses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientJobs.Designer.cs">
-      <DependentUpon>PatientJobs.cs</DependentUpon>
+    <Compile Include="PatientDoses.Designer.cs">
+      <DependentUpon>PatientDoses.cs</DependentUpon>
     </Compile>
-    <Compile Include="PotionAddition.cs">
+    <Compile Include="MedicineAddition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PotionAddition.Designer.cs">
-      <DependentUpon>PotionAddition.cs</DependentUpon>
+    <Compile Include="MedicineAddition.Designer.cs">
+      <DependentUpon>MedicineAddition.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Secretary.cs" />
-    <EmbeddedResource Include="doses.resx">
-      <DependentUpon>doses.cs</DependentUpon>
+    <Compile Include="Visit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visit.Designer.cs">
+      <DependentUpon>Visit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrSearch.resx">
+      <DependentUpon>AddOrSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Are_You_Sure.resx">
+      <DependentUpon>Are_You_Sure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joke.resx">
+      <DependentUpon>Joke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientEntity.resx">
+      <DependentUpon>PatientEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientDoses.resx">
+      <DependentUpon>PatientDoses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicineAddition.resx">
+      <DependentUpon>MedicineAddition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

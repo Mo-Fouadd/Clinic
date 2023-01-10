@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class Visit
     {
@@ -79,6 +79,11 @@
             this.PatientVisit = new System.Windows.Forms.TextBox();
             this.VisitDate = new System.Windows.Forms.TextBox();
             this.MainMenu = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -519,6 +524,51 @@
             this.MainMenu.UseVisualStyleBackColor = true;
             this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1271, 313);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(86, 47);
+            this.button5.TabIndex = 124;
+            this.button5.Text = "Print Case";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1464, 503);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(116, 39);
+            this.button6.TabIndex = 125;
+            this.button6.Text = "Print Treatment";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1464, 686);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(145, 51);
+            this.button7.TabIndex = 126;
+            this.button7.Text = "Print Medical Report";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(1464, 867);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(145, 48);
+            this.button8.TabIndex = 127;
+            this.button8.Text = "Print Diagnostic";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(28, 1110);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(96, 79);
+            this.button9.TabIndex = 128;
+            this.button9.Text = "Print X-Ray";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Visit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,6 +577,11 @@
             this.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.VisitDate);
             this.Controls.Add(this.PatientVisit);
@@ -578,7 +633,6 @@
             this.Controls.Add(this.Treatment1);
             this.Controls.Add(this.Report1);
             this.Controls.Add(this.Case);
-            this.MaximumSize = new System.Drawing.Size(1942, 1110);
             this.Name = "Visit";
             this.Text = "Visit";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -646,5 +700,10 @@
         private System.Windows.Forms.TextBox PatientVisit;
         private System.Windows.Forms.TextBox VisitDate;
         private System.Windows.Forms.Button MainMenu;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }

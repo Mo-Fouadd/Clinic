@@ -14,8 +14,6 @@ namespace ClinicApplication
 
         public Job()
         {
-   
-            JobId = id;
         }
     }
 }

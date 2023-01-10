@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
-    partial class PotionAddition
+    partial class MedicineAddition
     {
         /// <summary>
         /// Required designer variable.
@@ -50,6 +50,7 @@
             this.Name = "PotionAddition";
             this.Text = "PotionAddition";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PotionAddition_Load);
             this.ResumeLayout(false);
 
         }

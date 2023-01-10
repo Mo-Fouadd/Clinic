@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace ClinicApplication
 {
     public partial class Add : Form
     {
@@ -36,6 +36,11 @@ namespace WindowsFormsApp3
         {
             home.Show();
             this.Close();
+        }
+
+        private void Add_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

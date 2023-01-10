@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class Are_You_Sure
     {
@@ -74,6 +74,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Are_You_Sure";
             this.Text = "Are_You_Sure";
+            this.Load += new System.EventHandler(this.Are_You_Sure_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

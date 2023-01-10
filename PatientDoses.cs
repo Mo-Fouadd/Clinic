@@ -1,5 +1,4 @@
-﻿using ClinicApplication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace ClinicApplication
 {
-    public partial class PatientJobs : Form
+    public partial class PatientDoses : Form
     {
         HomeScreen home;
-        public PatientJobs(HomeScreen home)
+        public PatientDoses(HomeScreen home)
         {
             InitializeComponent();
             this.home = home;
@@ -24,6 +23,11 @@ namespace WindowsFormsApp3
         {
             home.Show();
             this.Close();
+        }
+
+        private void PatientJobs_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
