@@ -25,10 +25,10 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(TextBox.1.text=="yehia-marwan@taymour.fouad") {
-                Form1 a = new Form1();
-                a.Show();
-            }
+            //if(TextBox.1.text=="yehia-marwan@taymour.fouad") {
+            //    Form1 a = new Form1();
+            //    a.Show();
+            //}
 
         }
     }
