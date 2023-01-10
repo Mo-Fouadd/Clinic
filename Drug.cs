@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    internal class Drug
+    public class Drug
     {
-        readonly int DrugId;
-        string Drugname;
-
-        public Drug(int id, string name)
+        int DrugId;
+        public int drugid
         {
-            DrugId = id;
-            Drugname = name;
+            set { DrugId = value; }
+            get { return DrugId; }
+        }
+        string Drugname;
+        public string drugname
+        {
+            set { Drugname = value; }
+            get { return Drugname; }
+        }
+
+        public Drug()
+        {
         }
     }
 }

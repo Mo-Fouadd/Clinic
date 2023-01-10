@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    internal class Job
+    public class Job
     {
         string JobName;
         int JobId;
 
-        public Job(string name, int id)
+        public Job()
         {
-            JobName = name;
-            JobId = id;
+   
         }
     }
 }

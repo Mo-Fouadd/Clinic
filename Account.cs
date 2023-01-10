@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    internal abstract class Account
+    public abstract class Account
     {
         string user;
         string name;

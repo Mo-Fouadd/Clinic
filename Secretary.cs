@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    internal class Secretary : Account
+    public class Secretary : Account
     {
         public Secretary(string user, string password, string name) : base(user, password, name)
         {
