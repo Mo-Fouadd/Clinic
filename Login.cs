@@ -15,10 +15,6 @@ namespace ClinicApplication
         public Login()
         {
             InitializeComponent();
-            textBox1.Text = " eg:  NaggarFo24@xxxxx.com";
-            textBox1.ForeColor = Color.Gray;
-            textBox2.Text = " eg: xxxxxxxx";
-            textBox2.ForeColor = Color.Gray;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
