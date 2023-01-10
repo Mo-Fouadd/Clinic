@@ -12,7 +12,7 @@ namespace ClinicApplication
         string DoctorName;
         public Doctor(string user, string password, string name) : base(user, password, name)
         {
-         
+
         }
 
         public static bool operator ==(Doctor a, Doctor b)
