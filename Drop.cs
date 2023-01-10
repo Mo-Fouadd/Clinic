@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    internal class Drop
+    public class Drop
     {
-       readonly int DropId;
+        readonly int DropId;
         string DropDescription;
 
-        public Drop(int id, string des)
+        public Drop()
         {
-            DropId = id;
-            DropDescription = des;
         }
     }
 }
