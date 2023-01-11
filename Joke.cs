@@ -14,11 +14,13 @@ namespace ClinicApplication
     {
         Login login;
         HomeScreen home;
-        public Joke(HomeScreen home,Login login)
+        SecretaryScreen secretary1;
+        public Joke(HomeScreen home,Login login,SecretaryScreen secretary1)
         {
             InitializeComponent();
             this.home = home;
             this.login = login;
+            this.secretary1 = secretary1;
         }
 
         private void Joke_Load(object sender, EventArgs e)
@@ -35,6 +37,8 @@ namespace ClinicApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
+            secretary1.Show();
+            login.Hide();
             this.Close();
         }
     }

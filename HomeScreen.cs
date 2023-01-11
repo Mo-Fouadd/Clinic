@@ -12,6 +12,10 @@ namespace ClinicApplication
             InitializeComponent();
             this.login = login;
         }
+        public HomeScreen()
+        {
+            InitializeComponent();
+        }
 
 
         private void HomeScreen_Load(object sender, EventArgs e)

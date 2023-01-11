@@ -12,8 +12,13 @@ namespace ClinicApplication
 {
     public partial class PatientEntity : Form
     {
-        HomeScreen home;
+        Object home;
         public PatientEntity(HomeScreen home)
+        {
+            InitializeComponent();
+            this.home = home;
+        }
+        public PatientEntity(SecretaryScreen home)
         {
             InitializeComponent();
             this.home = home;
@@ -21,8 +26,18 @@ namespace ClinicApplication
 
         private void MainMenu_Click(object sender, EventArgs e)
         {
-            home.Show();
-            this.Close();
+            if (home is HomeScreen)
+            {
+                HomeScreen home1 = home as HomeScreen;
+                home1.Show();
+                this.Close();
+            }
+            else if (home is SecretaryScreen)
+            {
+                SecretaryScreen home2 = home as SecretaryScreen;
+                home2.Show();
+                this.Close();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
