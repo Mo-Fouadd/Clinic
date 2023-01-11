@@ -12,11 +12,24 @@ namespace ClinicApplication
 {
     public partial class Visit : Form
     {
+
         HomeScreen home;
-        public Visit(HomeScreen home)
+        Patient patient;
+        public Visit(HomeScreen home, Patient patient)
         {
             InitializeComponent();
             this.home = home;
+            this.patient = patient;
+            Entity.Text = Convert.ToString(patient.EntityId);
+            Telephone.Text = Convert.ToString(patient.HomeNumber);
+            Mobile.Text = Convert.ToString(patient.PhoneNumber);
+            Age.Text = Convert.ToString(patient.Age);
+            Height.Text = Convert.ToString(patient.Height);
+            Weight.Text = Convert.ToString(patient.Weight);
+            Number.Text = Convert.ToString(patient.Id);
+            _Name.Text = Convert.ToString(patient.Name);
+            Occupation.Text = Convert.ToString(patient.JobNo);
+            Visits.Text = Convert.ToString(patient.NoOfVisits);
         }
 
         private void label15_Click(object sender, EventArgs e)

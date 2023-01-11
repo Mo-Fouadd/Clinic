@@ -20,20 +20,20 @@ namespace ClinicApplication
         public int Age { get { return age; } set { age = value; } }
         int jobNo = 0;
         public int JobNo { get { return jobNo; } set { jobNo = value; } }
-        int authorityNo = 0;
-        public int AuthorityNo { get { return authorityNo; } set { authorityNo = value; } }
-        double longPatient = 0;
-        public double LongPatient { get { return longPatient; } set { longPatient = value; } }
-        double weight = 0;
+        int entityid;
+        string entityname;
+        public int EntityId { get { return entityid; } set { entityid = value; } }
+        public string EntityName { get { return entityname; } set { entityname = value; } }
+        double weight;
+        public double Height { get { return height; } set { height = value; } }
         public double Weight { get { return weight; } set { weight = value; } }
-        long phoneNumber = 0;
+        long phoneNumber;
         public long PhoneNumber { get { return phoneNumber; } set { phoneNumber = value; } }
-        long homeNumber = 0;
+        long homeNumber;
         public long HomeNumber { get { return homeNumber; } set { homeNumber = value; } }
         int noOfVisits = 0;
         public int NoOfVisits { get { return noOfVisits; } set { noOfVisits = value; } }
         double height = 0;
-        public double Height { get { return height; } set { height = value; } }
 
         public Patient() { }
 

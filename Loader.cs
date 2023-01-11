@@ -7,14 +7,14 @@ namespace ClinicApplication
 {
     public abstract class Loader
     {
-        static string sql = "Data Source =DESKTOP-IV5FD4B\\SQLEXPRESS; Initial Catalog =FormBB; Integrated Security =True ";
+        static string sql = "Data Source =DESKTOP-09565VK\\SQLEXPRESS; Initial Catalog =Clinic; Integrated Security =True ";
         static public SqlConnection cona = new SqlConnection(sql);
         //public Loader() { }
         static public DataTable LoadUserTable()
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM patientsD";
+            string query = "SELECT * FROM patientsS";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -25,7 +25,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM patientsD WHERE Name LIKE '" + search + "%'";
+            string query = "SELECT * FROM patientsS WHERE Name LIKE '" + search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -99,13 +99,13 @@ namespace ClinicApplication
                 patientss[i].Name = te.Rows[i][1].ToString();
                 patientss[i].Age = Convert.ToInt32(te.Rows[i][2].ToString());
                 patientss[i].JobNo = Convert.ToInt32(te.Rows[i][3].ToString());
-                patientss[i].AuthorityNo = Convert.ToInt32(te.Rows[i][4].ToString());
-                patientss[i].LongPatient = Convert.ToDouble(te.Rows[i][5].ToString());
+                patientss[i].EntityId = Convert.ToInt32(te.Rows[i][4].ToString());
+                patientss[i].Height = Convert.ToDouble(te.Rows[i][5].ToString());
                 patientss[i].Weight = Convert.ToDouble(te.Rows[i][6].ToString());
-                patientss[i].PhoneNumber = ((long)Convert.ToDouble(te.Rows[i][7].ToString()));
-                patientss[i].HomeNumber = (te.Rows[i][8].ToString() == null ? ((long)Convert.ToDouble(te.Rows[i][8].ToString())) : 0);
-                patientss[i].NoOfVisits = Convert.ToInt32(te.Rows[i][8].ToString());
-                patientss[i].Height = Convert.ToDouble(te.Rows[i][10].ToString());
+                patientss[i].PhoneNumber = ((te.Rows[i][7].ToString() != null) ? (long)Convert.ToDouble(te.Rows[i][7].ToString()): 0);
+                patientss[i].HomeNumber = ((te.Rows[i][8].ToString() != null) ? (long)Convert.ToDouble(te.Rows[i][8].ToString()) : 0);
+                patientss[i].NoOfVisits = Convert.ToInt32(te.Rows[i][9].ToString());
+                
             }
             return patientss;
         } 
@@ -151,13 +151,28 @@ namespace ClinicApplication
             patient.Name = data.Cells[1].Value.ToString();
             patient.Age = Convert.ToInt32(data.Cells[2].Value.ToString());
             patient.JobNo = Convert.ToInt32(data.Cells[3].Value.ToString());
-            patient.AuthorityNo = Convert.ToInt32(data.Cells[4].Value.ToString());
-            patient.LongPatient = Convert.ToDouble(data.Cells[5].Value.ToString());
+            patient.EntityId = Convert.ToInt32(data.Cells[4].Value.ToString());
+            patient.Height = Convert.ToDouble(data.Cells[5].Value.ToString());
             patient.Weight = Convert.ToDouble(data.Cells[6].Value.ToString());
-            patient.PhoneNumber = (data.Cells[7].Value.ToString() == null ? ((long)Convert.ToDouble(data.Cells[7].Value.ToString())) : 0);
-            patient.HomeNumber = (data.Cells[8].Value.ToString() == null ? ((long)Convert.ToDouble(data.Cells[8].Value.ToString())) : 0);
+            try 
+            { 
+                patient.PhoneNumber = ((long)Convert.ToDouble(data.Cells[7].Value.ToString()));
+              
+            }
+            catch
+            {
+                patient.PhoneNumber = 0;
+            }
+            try
+            {
+                patient.HomeNumber = ((long)Convert.ToDouble(data.Cells[8].Value.ToString()));
+            }
+            catch 
+            { 
+                patient.HomeNumber = 0; 
+            }
             patient.NoOfVisits = Convert.ToInt32(data.Cells[9].Value.ToString());
-            patient.Height = Convert.ToDouble(data.Cells[10].Value.ToString());
+            
 
             return patient;
 
@@ -182,6 +197,25 @@ namespace ClinicApplication
         }
         //static public Patient[] allPatients = loadPatients();
 
+        static public void InsertToPatientTable(string name, int age ,int entity, long mobileNumber, long telephonenumber, double height, double weight, int occupation)
+        {
+          
+            cona.Open();
+            string query = "INSERT INTO patientsS VALUES (@Name, @Age, @Job, @Entity, @Height, @Weight, @Mobile, @Mobile2, @Visits)";
+            SqlCommand cmd =  new SqlCommand(query);
+            cmd.Connection = cona;
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Age", age);
+            cmd.Parameters.AddWithValue("@Job", occupation);
+            cmd.Parameters.AddWithValue("@Entity", entity);
+            cmd.Parameters.AddWithValue("@Height", height);
+            cmd.Parameters.AddWithValue("@Weight", weight);
+            cmd.Parameters.AddWithValue("@Mobile", mobileNumber);
+            cmd.Parameters.AddWithValue("@Mobile2", telephonenumber);
+            cmd.ExecuteNonQuery();
+            cona.Close();
+            MessageBox.Show("Added!");
+        }
 
 
        
