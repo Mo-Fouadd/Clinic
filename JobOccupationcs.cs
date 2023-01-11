@@ -12,7 +12,7 @@ namespace ClinicApplication
 {
     public partial class JobOccupationcs : Form
     {
-        Object home;
+        Form home;
         public JobOccupationcs(HomeScreen home)
         {
             InitializeComponent();

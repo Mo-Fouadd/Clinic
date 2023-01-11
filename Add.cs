@@ -12,7 +12,7 @@ namespace ClinicApplication
 {
     public partial class Add : Form
     {
-        Object home;
+        Form home;
         Patient patient;
         public Add(HomeScreen home)
         {

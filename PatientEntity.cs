@@ -12,7 +12,7 @@ namespace ClinicApplication
 {
     public partial class PatientEntity : Form
     {
-        Object home;
+        Form home;
         public PatientEntity(HomeScreen home)
         {
             InitializeComponent();
