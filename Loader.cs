@@ -38,7 +38,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM authorityD";
+            string query = "SELECT * FROM EntityD";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -49,7 +49,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM authorityD WHERE AuthName LIKE '" + search + "%'";
+            string query = "SELECT * FROM EntityD WHERE AuthName LIKE '" + search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -217,6 +217,18 @@ namespace ClinicApplication
             cmd.ExecuteNonQuery();
             cona.Close();
             MessageBox.Show("Added!");
+        } 
+        static public void InsertToEntityTable(string name)
+        {
+            cona.Open();
+            string query = "INSERT INTO EntityD (AuthName) VALUES (@AuthName)";
+            SqlCommand cmd =  new SqlCommand(query);
+            cmd.Connection = cona;
+            cmd.Parameters.AddWithValue("@AuthName", name);
+            cmd.ExecuteNonQuery();
+            cona.Close();
+            MessageBox.Show("Added!");
+
         }
 
 

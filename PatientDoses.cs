@@ -29,5 +29,10 @@ namespace ClinicApplication
         {
 
         }
+
+        private void Search_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace ClinicApplication
         {
             InitializeComponent();
             this.home = home;
+            dataGridView1.DataSource = Loader.LoadEntityTable();
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
@@ -43,6 +44,22 @@ namespace ClinicApplication
         private void PatientEntity_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Search_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Loader.LoadEntityTable(PatientEntity1.Text);
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            Loader.InsertToEntityTable(PatientEntity1.Text);
+            dataGridView1.DataSource = Loader.LoadEntityTable();
         }
     }
 }

@@ -10,9 +10,12 @@ namespace ClinicApplication
     {
         int Id;
         public int id { get; set; }
+
+
         public string Name; 
-        
+
         public string name{ get; set; }
+
         double Discount;
         public double discount
         {
