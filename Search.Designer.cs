@@ -36,12 +36,13 @@
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.Search3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Search2
             // 
-            this.Search2.Location = new System.Drawing.Point(480, 861);
+            this.Search2.Location = new System.Drawing.Point(481, 934);
             this.Search2.Name = "Search2";
             this.Search2.Size = new System.Drawing.Size(1013, 22);
             this.Search2.TabIndex = 0;
@@ -97,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(393, 858);
+            this.label1.Location = new System.Drawing.Point(382, 930);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 25);
             this.label1.TabIndex = 3;
@@ -105,18 +106,28 @@
             // 
             // Search3
             // 
-            this.Search3.Location = new System.Drawing.Point(1516, 853);
+            this.Search3.Location = new System.Drawing.Point(1543, 925);
             this.Search3.Name = "Search3";
             this.Search3.Size = new System.Drawing.Size(116, 40);
             this.Search3.TabIndex = 4;
-            this.Search3.Text = "Search";
+            this.Search3.Text = "Find";
             this.Search3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(897, 759);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 40);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Search";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Search3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -142,5 +153,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Search3;
+        private System.Windows.Forms.Button button2;
     }
 }
