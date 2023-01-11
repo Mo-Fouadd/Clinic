@@ -23,6 +23,7 @@ namespace ClinicApplication
         {
             InitializeComponent();
             this.home = home;
+            dataGridView1.DataSource = Loader.LoadEntityTable();
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
@@ -68,7 +69,20 @@ namespace ClinicApplication
 
         private void Search_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Loader.LoadEntityTable(PatientEntity1.Text);
+            if (home is HomeScreen)
+            {
+                HomeScreen home1 =(HomeScreen)home;
+                dataGridView1.DataSource = Loader.LoadEntityTable(PatientEntity1.Text);
+                home1.Show();
+                this.Close();
+            }
+            else if(home is SecretaryScreen)
+            {
+                SecretaryScreen home2 = (SecretaryScreen)home;
+                dataGridView1.DataSource = Loader.LoadEntityTable(PatientEntity1.Text);
+                home2.Show();
+                this.Close();
+            }
         }
 
         private void Add_Click(object sender, EventArgs e)
