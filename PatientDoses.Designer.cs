@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.Label();
+            this.Doses = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,18 +55,19 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(852, 299);
+            this.textBox4.Location = new System.Drawing.Point(678, 378);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(467, 22);
+            this.textBox4.Size = new System.Drawing.Size(763, 22);
             this.textBox4.TabIndex = 18;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(534, 299);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1035, 279);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(100, 38);
             this.button2.TabIndex = 17;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,7 +75,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(715, 296);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(540, 375);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -87,7 +91,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(787, 288);
+            this.dataGridView1.Size = new System.Drawing.Size(1120, 288);
             this.dataGridView1.TabIndex = 15;
             // 
             // label3
@@ -99,7 +103,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(2768, 46);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Drop";
+            this.label3.Text = "Patient Doses";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
@@ -133,7 +137,7 @@
             this.textBox2.Location = new System.Drawing.Point(534, 233);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(785, 22);
+            this.textBox2.Size = new System.Drawing.Size(1118, 22);
             this.textBox2.TabIndex = 11;
             // 
             // textBox1
@@ -141,14 +145,36 @@
             this.textBox1.Location = new System.Drawing.Point(534, 169);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(785, 22);
+            this.textBox1.Size = new System.Drawing.Size(1118, 22);
             this.textBox1.TabIndex = 10;
+            // 
+            // ID
+            // 
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.Location = new System.Drawing.Point(485, 165);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(42, 25);
+            this.ID.TabIndex = 19;
+            this.ID.Text = "ID: ";
+            // 
+            // Doses
+            // 
+            this.Doses.AutoSize = true;
+            this.Doses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doses.Location = new System.Drawing.Point(453, 229);
+            this.Doses.Name = "Doses";
+            this.Doses.Size = new System.Drawing.Size(74, 25);
+            this.Doses.TabIndex = 20;
+            this.Doses.Text = "Doses:";
             // 
             // PatientDoses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.Doses);
+            this.Controls.Add(this.ID);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -181,5 +207,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.Label Doses;
     }
 }
