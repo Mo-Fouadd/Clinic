@@ -136,12 +136,6 @@
             this.Doses1.Name = "Doses1";
             this.Doses1.Size = new System.Drawing.Size(1118, 22);
             this.Doses1.TabIndex = 11;
-            // 
-            this.textBox2.Location = new System.Drawing.Point(400, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(590, 20);
-            this.textBox2.TabIndex = 11;
-            // 
             this.ID1.Location = new System.Drawing.Point(534, 169);
             this.ID1.Margin = new System.Windows.Forms.Padding(4);
             this.ID1.Name = "ID1";

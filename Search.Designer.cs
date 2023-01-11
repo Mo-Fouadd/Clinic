@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Finder = new System.Windows.Forms.Button();
             this.Confirm = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             this.SearchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchBar.Location = new System.Drawing.Point(469, 927);
             this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(1013, 30);
+            this.SearchBar.Size = new System.Drawing.Size(1013, 26);
             this.SearchBar.TabIndex = 0;
             // 
             // MainMenu
@@ -75,7 +76,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(355, 927);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(87, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Search:";
             // 
@@ -92,7 +93,7 @@
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(1021, 760);
+            this.Confirm.Location = new System.Drawing.Point(640, 623);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(116, 40);
             this.Confirm.TabIndex = 5;
@@ -100,11 +101,19 @@
             this.Confirm.UseVisualStyleBackColor = true;
             this.Confirm.Click += new System.EventHandler(this.Confirm_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(291, 759);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(818, 20);
+            this.textBox1.TabIndex = 6;
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
@@ -129,5 +138,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Finder;
         private System.Windows.Forms.Button Confirm;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

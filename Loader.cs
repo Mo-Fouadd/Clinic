@@ -199,7 +199,7 @@ namespace ClinicApplication
 
         static public void InsertToPatientTable(string name, int age ,int entity, long mobileNumber, long telephonenumber, double height, double weight, int occupation)
         {
-          
+            int visits = 1;
             cona.Open();
             string query = "INSERT INTO patientsS VALUES (@Name, @Age, @Job, @Entity, @Height, @Weight, @Mobile, @Mobile2, @Visits)";
             SqlCommand cmd =  new SqlCommand(query);
@@ -212,6 +212,8 @@ namespace ClinicApplication
             cmd.Parameters.AddWithValue("@Weight", weight);
             cmd.Parameters.AddWithValue("@Mobile", mobileNumber);
             cmd.Parameters.AddWithValue("@Mobile2", telephonenumber);
+            cmd.Parameters.AddWithValue("@Visits", visits);
+            
             cmd.ExecuteNonQuery();
             cona.Close();
             MessageBox.Show("Added!");

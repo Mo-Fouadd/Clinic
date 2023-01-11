@@ -60,7 +60,7 @@ namespace ClinicApplication
 
         private void Finder_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Loader.LoadUserTable(Search2.Text);
+            dataGridView1.DataSource = Loader.LoadUserTable(textBox1.Text);
         }
     }
 }
