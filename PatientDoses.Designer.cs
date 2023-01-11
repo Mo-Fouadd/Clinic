@@ -45,9 +45,10 @@
             // 
             // MainMenu
             // 
-            this.MainMenu.Location = new System.Drawing.Point(56, 105);
+            this.MainMenu.Location = new System.Drawing.Point(42, 85);
+            this.MainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(152, 51);
+            this.MainMenu.Size = new System.Drawing.Size(114, 41);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "Back To Main Menu";
             this.MainMenu.UseVisualStyleBackColor = true;
@@ -87,8 +88,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(532, 422);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(321, 343);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1120, 288);
@@ -98,10 +98,9 @@
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-311, 31);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(-336, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(2768, 46);
+            this.label3.Size = new System.Drawing.Size(2076, 37);
             this.label3.TabIndex = 14;
             this.label3.Text = "Patient Doses";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -111,10 +110,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-121, 176);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(-91, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 29);
+            this.label2.Size = new System.Drawing.Size(54, 24);
             this.label2.TabIndex = 13;
             this.label2.Text = "Dose";
             // 
@@ -124,10 +122,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(-121, 123);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(-91, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 29);
+            this.label1.Size = new System.Drawing.Size(27, 24);
             this.label1.TabIndex = 12;
             this.label1.Text = "ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,9 +136,6 @@
             this.Doses1.Name = "Doses1";
             this.Doses1.Size = new System.Drawing.Size(1118, 22);
             this.Doses1.TabIndex = 11;
-            // 
-            // ID1
-            // 
             this.ID1.Location = new System.Drawing.Point(534, 169);
             this.ID1.Margin = new System.Windows.Forms.Padding(4);
             this.ID1.Name = "ID1";
@@ -170,7 +164,7 @@
             // 
             // PatientDoses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.Doses);
@@ -185,6 +179,7 @@
             this.Controls.Add(this.Doses1);
             this.Controls.Add(this.ID1);
             this.Controls.Add(this.MainMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PatientDoses";
             this.Text = "PatientJobs";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
