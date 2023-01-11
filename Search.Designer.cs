@@ -35,7 +35,7 @@
             this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.Search3 = new System.Windows.Forms.Button();
+            this.Finder = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -104,23 +104,24 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Search:";
             // 
-            // Search3
+            // Finder
             // 
-            this.Search3.Location = new System.Drawing.Point(1543, 925);
-            this.Search3.Name = "Search3";
-            this.Search3.Size = new System.Drawing.Size(116, 40);
-            this.Search3.TabIndex = 4;
-            this.Search3.Text = "Find";
-            this.Search3.UseVisualStyleBackColor = true;
+            this.Finder.Location = new System.Drawing.Point(1543, 925);
+            this.Finder.Name = "Finder";
+            this.Finder.Size = new System.Drawing.Size(116, 40);
+            this.Finder.TabIndex = 4;
+            this.Finder.Text = "Find";
+            this.Finder.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(897, 759);
+            this.button2.Location = new System.Drawing.Point(1021, 760);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 40);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Search";
+            this.button2.Text = "Confirm";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Search
             // 
@@ -128,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.Search3);
+            this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -152,7 +153,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Search3;
+        private System.Windows.Forms.Button Finder;
         private System.Windows.Forms.Button button2;
     }
 }

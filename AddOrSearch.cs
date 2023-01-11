@@ -1,5 +1,4 @@
-﻿using ClinicApplication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +38,11 @@ namespace ClinicApplication
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddOrSearch_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
