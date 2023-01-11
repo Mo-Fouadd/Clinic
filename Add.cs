@@ -34,7 +34,7 @@ namespace ClinicApplication
         {
             if (home is HomeScreen)
             {
-                HomeScreen home1= (HomeScreen)home;
+                HomeScreen home1 = (HomeScreen)home;
                 patient = new Patient();
                 patient.EntityId = Convert.ToInt32(Entity.Text);
                 patient.HomeNumber = Convert.ToInt64(Telephone.Text);
@@ -48,24 +48,23 @@ namespace ClinicApplication
                 Loader.InsertToPatientTable(_Name.Text, Convert.ToInt32(Age.Text), Convert.ToInt32(Entity.Text), Convert.ToInt64(Mobile.Text), Convert.ToInt64(Telephone.Text), Convert.ToDouble(Height.Text), Convert.ToDouble(Weight.Text), Convert.ToInt32(Occupation.Text));
                 visit.Show();
                 this.Close();
+            }
+            else if(home is SecretaryScreen)
+            {
+                SecretaryScreen home2 = (SecretaryScreen)home;
+                patient = new Patient();
+                patient.EntityId = Convert.ToInt32(Entity.Text);
+                patient.HomeNumber = Convert.ToInt64(Telephone.Text);
+                patient.PhoneNumber = Convert.ToInt64(Mobile.Text);
+                patient.Age = Convert.ToInt32(Age.Text);
+                patient.Height = Convert.ToDouble(Height.Text);
+                patient.Weight = Convert.ToDouble(Weight.Text);
+                patient.Name = _Name.Text;
+                patient.JobNo = Convert.ToInt32(Occupation.Text);
+                Visit visit1 = new Visit(new HomeScreen(new Login()), patient);
+                Loader.InsertToPatientTable(_Name.Text, Convert.ToInt32(Age.Text), Convert.ToInt32(Entity.Text), Convert.ToInt64(Mobile.Text), Convert.ToInt64(Telephone.Text), Convert.ToDouble(Height.Text), Convert.ToDouble(Weight.Text), Convert.ToInt32(Occupation.Text));
+                this.Close();
 
-
-                if (home is SecretaryScreen)
-                {
-                    SecretaryScreen home2 = (SecretaryScreen)home;
-                    //patient = new Patient();
-                    //patient.EntityId = Convert.ToInt32(Entity.Text);
-                    //patient.HomeNumber = Convert.ToInt64(Telephone.Text);
-                    //patient.PhoneNumber = Convert.ToInt64(Mobile.Text);
-                    //patient.Age = Convert.ToInt32(Age.Text);
-                    //patient.Height = Convert.ToDouble(Height.Text);
-                    //patient.Weight = Convert.ToDouble(Weight.Text);
-                    //patient.Name = _Name.Text;
-                    //patient.JobNo = Convert.ToInt32(Occupation.Text);
-                    Loader.InsertToPatientTable(_Name.Text, Convert.ToInt32(Age.Text), Convert.ToInt32(Entity.Text), Convert.ToInt64(Mobile.Text), Convert.ToInt64(Telephone.Text), Convert.ToDouble(Height.Text), Convert.ToDouble(Weight.Text), Convert.ToInt32(Occupation.Text));
-                    this.Close();
-
-                }
             }
         }
 
