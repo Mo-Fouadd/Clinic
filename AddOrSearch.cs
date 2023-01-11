@@ -25,6 +25,7 @@ namespace WindowsFormsApp3
             Search search= new Search(home);
             search.Show();
             this.Close();
+            home.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

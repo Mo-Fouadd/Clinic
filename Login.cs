@@ -20,7 +20,8 @@ namespace ClinicApplication
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Joke joke = new Joke();
+            HomeScreen home = new HomeScreen(this);
+            Joke joke = new Joke(home,this);
             joke.Show();
         }
 
