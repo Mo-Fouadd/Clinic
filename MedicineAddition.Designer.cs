@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.MainMenu = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MainMenu
@@ -41,22 +42,34 @@
             this.MainMenu.UseVisualStyleBackColor = true;
             this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
-            // PotionAddition
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(710, 136);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Medicine";
+            // 
+            // MedicineAddition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.MainMenu);
-            this.Name = "PotionAddition";
+            this.Name = "MedicineAddition";
             this.Text = "PotionAddition";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PotionAddition_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button MainMenu;
+        private System.Windows.Forms.Label label1;
     }
 }

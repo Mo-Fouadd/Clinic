@@ -25,4 +25,13 @@ namespace ClinicApplication
         {
         }
     }
+    public class Drink:Drug
+    {
+
+    }
+    public class Tablet:Drug
+    {
+
+    }
+    public class `
 }

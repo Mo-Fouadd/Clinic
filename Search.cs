@@ -35,5 +35,12 @@ namespace WindowsFormsApp3
             home.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Visit visit = new Visit(home);
+            visit.Show();
+            this.Close();
+        }
     }
 }
