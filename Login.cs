@@ -23,8 +23,9 @@ namespace ClinicApplication
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            SecretaryScreen secretary1 = new SecretaryScreen(this);
             HomeScreen home = new HomeScreen(this);
-            Joke joke = new Joke(home,this);
+            Joke joke = new Joke(home,this,secretary1);
             joke.Show();
         }
 

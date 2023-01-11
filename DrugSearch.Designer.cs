@@ -96,7 +96,7 @@
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(1019, 776);
+            this.Confirm.Location = new System.Drawing.Point(972, 778);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(116, 40);
             this.Confirm.TabIndex = 12;
