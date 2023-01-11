@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
-    partial class AddOrSearch
+    partial class AddOrSearch_Patients
     {
         /// <summary>
         /// Required designer variable.

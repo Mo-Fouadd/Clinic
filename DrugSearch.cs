@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClinicApplication;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,26 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicApplication
+namespace WindowsFormsApp3
 {
-    public partial class MedicineAddition : Form
+    public partial class DrugSearch : Form
     {
         HomeScreen home;
-        public MedicineAddition(HomeScreen home)
+        public DrugSearch(HomeScreen home)
         {
-            InitializeComponent();
             this.home = home;
+            InitializeComponent();
         }
 
-        private void MainMenu_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             home.Show();
             this.Close();
-        }
-
-        private void PotionAddition_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

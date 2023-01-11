@@ -28,64 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.PatientVisit = new System.Windows.Forms.Button();
+            this.NewDoses = new System.Windows.Forms.Button();
+            this.PatientJobs = new System.Windows.Forms.Button();
+            this.PatientEntity = new System.Windows.Forms.Button();
+            this.NewMedicine = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // PatientVisit
             // 
-            this.button1.Location = new System.Drawing.Point(1063, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Register Patient Visit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.PatientVisit.Location = new System.Drawing.Point(1063, 371);
+            this.PatientVisit.Name = "PatientVisit";
+            this.PatientVisit.Size = new System.Drawing.Size(216, 37);
+            this.PatientVisit.TabIndex = 0;
+            this.PatientVisit.Text = "Register Patient Visit";
+            this.PatientVisit.UseVisualStyleBackColor = true;
+            this.PatientVisit.Click += new System.EventHandler(this.PatientVisit_Click);
             // 
-            // button2
+            // NewDoses
             // 
-            this.button2.Location = new System.Drawing.Point(696, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Register New Doses";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.NewDoses.Location = new System.Drawing.Point(696, 371);
+            this.NewDoses.Name = "NewDoses";
+            this.NewDoses.Size = new System.Drawing.Size(235, 37);
+            this.NewDoses.TabIndex = 1;
+            this.NewDoses.Text = "Register New Doses";
+            this.NewDoses.UseVisualStyleBackColor = true;
+            this.NewDoses.Click += new System.EventHandler(this.NewDoses_Click);
             // 
-            // button3
+            // PatientJobs
             // 
-            this.button3.Location = new System.Drawing.Point(867, 429);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Register Patient Jobs";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.PatientJobs.Location = new System.Drawing.Point(867, 429);
+            this.PatientJobs.Name = "PatientJobs";
+            this.PatientJobs.Size = new System.Drawing.Size(240, 36);
+            this.PatientJobs.TabIndex = 2;
+            this.PatientJobs.Text = "Register Patient Jobs";
+            this.PatientJobs.UseVisualStyleBackColor = true;
+            this.PatientJobs.Click += new System.EventHandler(this.PatientJobs_Click);
             // 
-            // button4
+            // PatientEntity
             // 
-            this.button4.Location = new System.Drawing.Point(867, 485);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 37);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Register Patient Entity";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.PatientEntity.Location = new System.Drawing.Point(867, 485);
+            this.PatientEntity.Name = "PatientEntity";
+            this.PatientEntity.Size = new System.Drawing.Size(240, 37);
+            this.PatientEntity.TabIndex = 3;
+            this.PatientEntity.Text = "Register Patient Entity";
+            this.PatientEntity.UseVisualStyleBackColor = true;
+            this.PatientEntity.Click += new System.EventHandler(this.PatientEntity_Click);
             // 
-            // button5
+            // NewMedicine
             // 
-            this.button5.Location = new System.Drawing.Point(867, 539);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(240, 40);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Add New Medicine";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.NewMedicine.Location = new System.Drawing.Point(867, 539);
+            this.NewMedicine.Name = "NewMedicine";
+            this.NewMedicine.Size = new System.Drawing.Size(240, 40);
+            this.NewMedicine.TabIndex = 4;
+            this.NewMedicine.Text = "Add New Medicine";
+            this.NewMedicine.UseVisualStyleBackColor = true;
+            this.NewMedicine.Click += new System.EventHandler(this.NewMedicine_Click);
             // 
             // Exit
             // 
@@ -115,11 +115,11 @@
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.NewMedicine);
+            this.Controls.Add(this.PatientEntity);
+            this.Controls.Add(this.PatientJobs);
+            this.Controls.Add(this.NewDoses);
+            this.Controls.Add(this.PatientVisit);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
@@ -131,11 +131,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button PatientVisit;
+        private System.Windows.Forms.Button NewDoses;
+        private System.Windows.Forms.Button PatientJobs;
+        private System.Windows.Forms.Button PatientEntity;
+        private System.Windows.Forms.Button NewMedicine;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label label1;
     }

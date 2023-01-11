@@ -69,11 +69,11 @@
     <Compile Include="Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddOrSearch.cs">
+    <Compile Include="AddOrSearch_Patients.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddOrSearch.Designer.cs">
-      <DependentUpon>AddOrSearch.cs</DependentUpon>
+    <Compile Include="AddOrSearch_Patients.Designer.cs">
+      <DependentUpon>AddOrSearch_Patients.cs</DependentUpon>
     </Compile>
     <Compile Include="Are_You_Sure.cs">
       <SubType>Form</SubType>
@@ -83,6 +83,18 @@
     </Compile>
     <Compile Include="Doctor.cs" />
     <Compile Include="Drug.cs" />
+    <Compile Include="DrugAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugAdd.Designer.cs">
+      <DependentUpon>DrugAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugSearch.Designer.cs">
+      <DependentUpon>DrugSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entity.cs" />
     <Compile Include="Drop.cs" />
     <Compile Include="HomeScreen.cs">
@@ -92,6 +104,12 @@
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Job.cs" />
+    <Compile Include="JobOccupationcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobOccupationcs.Designer.cs">
+      <DependentUpon>JobOccupationcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Joke.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,14 +136,20 @@
     <Compile Include="PatientDoses.Designer.cs">
       <DependentUpon>PatientDoses.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicineAddition.cs">
+    <Compile Include="AddOrSearch_Drugs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MedicineAddition.Designer.cs">
-      <DependentUpon>MedicineAddition.cs</DependentUpon>
+    <Compile Include="AddOrSearch_Drugs.Designer.cs">
+      <DependentUpon>AddOrSearch_Drugs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Secretary.cs" />
     <Compile Include="Visit.cs">
       <SubType>Form</SubType>
@@ -136,14 +160,23 @@
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddOrSearch.resx">
-      <DependentUpon>AddOrSearch.cs</DependentUpon>
+    <EmbeddedResource Include="AddOrSearch_Patients.resx">
+      <DependentUpon>AddOrSearch_Patients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Are_You_Sure.resx">
       <DependentUpon>Are_You_Sure.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DrugAdd.resx">
+      <DependentUpon>DrugAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugSearch.resx">
+      <DependentUpon>DrugSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobOccupationcs.resx">
+      <DependentUpon>JobOccupationcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Joke.resx">
       <DependentUpon>Joke.cs</DependentUpon>
@@ -157,8 +190,8 @@
     <EmbeddedResource Include="PatientDoses.resx">
       <DependentUpon>PatientDoses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MedicineAddition.resx">
-      <DependentUpon>MedicineAddition.cs</DependentUpon>
+    <EmbeddedResource Include="AddOrSearch_Drugs.resx">
+      <DependentUpon>AddOrSearch_Drugs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -175,6 +208,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visit.resx">
       <DependentUpon>Visit.cs</DependentUpon>
     </EmbeddedResource>
