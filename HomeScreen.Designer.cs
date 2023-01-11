@@ -40,9 +40,10 @@
             // PatientVisit
             // 
             this.PatientVisit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientVisit.Location = new System.Drawing.Point(1017, 310);
+            this.PatientVisit.Location = new System.Drawing.Point(1060, 253);
+            this.PatientVisit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PatientVisit.Name = "PatientVisit";
-            this.PatientVisit.Size = new System.Drawing.Size(337, 70);
+            this.PatientVisit.Size = new System.Drawing.Size(449, 86);
             this.PatientVisit.TabIndex = 0;
             this.PatientVisit.Text = "Register Patient Visit";
             this.PatientVisit.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // NewDoses
             // 
             this.NewDoses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewDoses.Location = new System.Drawing.Point(621, 310);
+            this.NewDoses.Location = new System.Drawing.Point(532, 253);
+            this.NewDoses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewDoses.Name = "NewDoses";
-            this.NewDoses.Size = new System.Drawing.Size(337, 70);
+            this.NewDoses.Size = new System.Drawing.Size(449, 86);
             this.NewDoses.TabIndex = 1;
             this.NewDoses.Text = "Register New Doses";
             this.NewDoses.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // PatientJobs
             // 
             this.PatientJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientJobs.Location = new System.Drawing.Point(719, 413);
+            this.PatientJobs.Location = new System.Drawing.Point(663, 379);
+            this.PatientJobs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PatientJobs.Name = "PatientJobs";
-            this.PatientJobs.Size = new System.Drawing.Size(524, 66);
+            this.PatientJobs.Size = new System.Drawing.Size(699, 81);
             this.PatientJobs.TabIndex = 2;
             this.PatientJobs.Text = "Register Patient Jobs";
             this.PatientJobs.UseVisualStyleBackColor = true;
@@ -73,9 +76,10 @@
             // PatientEntity
             // 
             this.PatientEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientEntity.Location = new System.Drawing.Point(719, 510);
+            this.PatientEntity.Location = new System.Drawing.Point(663, 499);
+            this.PatientEntity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PatientEntity.Name = "PatientEntity";
-            this.PatientEntity.Size = new System.Drawing.Size(524, 66);
+            this.PatientEntity.Size = new System.Drawing.Size(699, 81);
             this.PatientEntity.TabIndex = 3;
             this.PatientEntity.Text = "Register Patient Entity";
             this.PatientEntity.UseVisualStyleBackColor = true;
@@ -84,9 +88,10 @@
             // NewMedicine
             // 
             this.NewMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewMedicine.Location = new System.Drawing.Point(719, 597);
+            this.NewMedicine.Location = new System.Drawing.Point(663, 606);
+            this.NewMedicine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NewMedicine.Name = "NewMedicine";
-            this.NewMedicine.Size = new System.Drawing.Size(524, 66);
+            this.NewMedicine.Size = new System.Drawing.Size(699, 81);
             this.NewMedicine.TabIndex = 4;
             this.NewMedicine.Text = "Add New Medicine";
             this.NewMedicine.UseVisualStyleBackColor = true;
@@ -95,9 +100,10 @@
             // Exit
             // 
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit.Location = new System.Drawing.Point(719, 686);
+            this.Exit.Location = new System.Drawing.Point(663, 715);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(524, 66);
+            this.Exit.Size = new System.Drawing.Size(699, 81);
             this.Exit.TabIndex = 5;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
@@ -107,18 +113,19 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(596, 159);
+            this.label1.Location = new System.Drawing.Point(499, 67);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(801, 88);
+            this.label1.Size = new System.Drawing.Size(1068, 108);
             this.label1.TabIndex = 6;
             this.label1.Text = "Dr Fouad Mohamed ElNaggar Clinic";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomeScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1490, 911);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.NewMedicine);
@@ -126,7 +133,7 @@
             this.Controls.Add(this.PatientJobs);
             this.Controls.Add(this.NewDoses);
             this.Controls.Add(this.PatientVisit);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
