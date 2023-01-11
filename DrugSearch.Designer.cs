@@ -40,47 +40,54 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(1676, 909);
+            this.Add.Location = new System.Drawing.Point(1257, 739);
+            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(116, 40);
+            this.Add.Size = new System.Drawing.Size(87, 32);
             this.Add.TabIndex = 11;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // Finder
             // 
-            this.Finder.Location = new System.Drawing.Point(1533, 909);
+            this.Finder.Location = new System.Drawing.Point(1150, 739);
+            this.Finder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Finder.Name = "Finder";
-            this.Finder.Size = new System.Drawing.Size(116, 40);
+            this.Finder.Size = new System.Drawing.Size(87, 32);
             this.Finder.TabIndex = 10;
             this.Finder.Text = "Find";
             this.Finder.UseVisualStyleBackColor = true;
+            this.Finder.Click += new System.EventHandler(this.Finder_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(375, 911);
+            this.label1.Location = new System.Drawing.Point(281, 740);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(87, 26);
             this.label1.TabIndex = 9;
             this.label1.Text = "Search:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(400, 131);
+            this.dataGridView1.Location = new System.Drawing.Point(300, 106);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1272, 630);
+            this.dataGridView1.Size = new System.Drawing.Size(954, 512);
             this.dataGridView1.TabIndex = 8;
             // 
             // MainMenu
             // 
-            this.MainMenu.Location = new System.Drawing.Point(25, 31);
+            this.MainMenu.Location = new System.Drawing.Point(19, 25);
+            this.MainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(167, 59);
+            this.MainMenu.Size = new System.Drawing.Size(125, 48);
             this.MainMenu.TabIndex = 7;
             this.MainMenu.Text = "Back To Main Menu";
             this.MainMenu.UseVisualStyleBackColor = true;
@@ -89,25 +96,27 @@
             // Searchbar
             // 
             this.Searchbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchbar.Location = new System.Drawing.Point(489, 911);
+            this.Searchbar.Location = new System.Drawing.Point(367, 740);
+            this.Searchbar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Searchbar.Name = "Searchbar";
-            this.Searchbar.Size = new System.Drawing.Size(1013, 30);
+            this.Searchbar.Size = new System.Drawing.Size(761, 26);
             this.Searchbar.TabIndex = 6;
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(972, 778);
+            this.Confirm.Location = new System.Drawing.Point(729, 632);
+            this.Confirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Confirm.Name = "Confirm";
-            this.Confirm.Size = new System.Drawing.Size(116, 40);
+            this.Confirm.Size = new System.Drawing.Size(87, 32);
             this.Confirm.TabIndex = 12;
             this.Confirm.Text = "Confirm";
             this.Confirm.UseVisualStyleBackColor = true;
             // 
             // DrugSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Finder);
@@ -115,6 +124,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.Searchbar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DrugSearch";
             this.Text = "DrugSearch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

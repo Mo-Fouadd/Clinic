@@ -41,7 +41,7 @@
             // MainMenu
             // 
             this.MainMenu.Location = new System.Drawing.Point(91, 77);
-            this.MainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Size = new System.Drawing.Size(140, 60);
             this.MainMenu.TabIndex = 0;
@@ -52,10 +52,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(555, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(370, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(452, 562);
+            this.dataGridView1.Size = new System.Drawing.Size(762, 562);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -126,7 +126,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MainMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PatientEntity";
             this.Text = "PatientEntity";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

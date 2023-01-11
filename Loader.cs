@@ -62,18 +62,62 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM drugsD";
+            string query = "SELECT * FROM drugS";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            cona.Close();
+            return dt;
+        } 
+        static public DataTable LoadDrugsTable(string search)
+        {
+            cona.Open();
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM drugS WHERE Name LIKE '"+ search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             cona.Close();
             return dt;
         }
-        static public DataTable LoadDrugsTable(string search)
+         static public DataTable LoadJobTable()
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM drugsD WHERE Name LIKE '"+ search + "%'";
+            string query = "SELECT * FROM jobS";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            cona.Close();
+            return dt;
+        } 
+        static public DataTable LoadJobTable(string search)
+        {
+            cona.Open();
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM jobS WHERE JobName LIKE '"+ search + "%'";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            cona.Close();
+            return dt;
+        } 
+        static public DataTable LoadDosesTable()
+        {
+            cona.Open();
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM DropS";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            cona.Close();
+            return dt;
+        }
+        static public DataTable LoadDosesTable(string search)
+        {
+            cona.Open();
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM DropS WHERE DropName LIKE '"+ search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -230,6 +274,44 @@ namespace ClinicApplication
             MessageBox.Show("Added!");
 
         }
+        static public void InsertToJobTable(string name)
+        {
+            cona.Open();
+            string query = "INSERT INTO jobS (JobName) VALUES (@JobName)";
+            SqlCommand cmd =  new SqlCommand(query);
+            cmd.Connection = cona;
+            cmd.Parameters.AddWithValue("@JobName", name);
+            cmd.ExecuteNonQuery();
+            cona.Close();
+            MessageBox.Show("Added!");
+
+        }
+        static public void InsertToDrugTable(string name)
+        {
+            cona.Open();
+            string query = "INSERT INTO drugS (DrugName) VALUES (@DrugName)";
+            SqlCommand cmd =  new SqlCommand(query);
+            cmd.Connection = cona;
+            cmd.Parameters.AddWithValue("@DrugName", name);
+            cmd.ExecuteNonQuery();
+            cona.Close();
+            MessageBox.Show("Added!");
+
+        }
+        static public void InsertToDropTable(string Description)
+        {
+            cona.Open();
+            string query = "INSERT INTO DropS (DropDesc) VALUES (@DropDesc)";
+            SqlCommand cmd =  new SqlCommand(query);
+            cmd.Connection = cona;
+            cmd.Parameters.AddWithValue("@DropDesc", Description);
+            cmd.ExecuteNonQuery();
+            cona.Close();
+            MessageBox.Show("Added!");
+
+        }
+
+
 
 
        

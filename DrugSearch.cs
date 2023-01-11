@@ -17,6 +17,7 @@ namespace ClinicApplication
         {
             this.home = home;
             InitializeComponent();
+            dataGridView1.DataSource = Loader.LoadDrugsTable();
         }
 
         private void DrugSearch_Load(object sender, EventArgs e)
@@ -28,6 +29,17 @@ namespace ClinicApplication
         {
             home.Show();
             this.Close();
+        }
+
+        private void Finder_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Loader.LoadDrugsTable(Searchbar.Text);
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            Loader.InsertToDrugTable(Searchbar.Text);
+            dataGridView1.DataSource = Loader.LoadDrugsTable();
         }
     }
 }
