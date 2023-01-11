@@ -73,6 +73,7 @@
             this.Controls.Add(this.button1);
             this.Name = "AddOrSearch";
             this.Text = "AddOrSearch";
+            this.Load += new System.EventHandler(this.AddOrSearch_Load);
             this.ResumeLayout(false);
 
         }
