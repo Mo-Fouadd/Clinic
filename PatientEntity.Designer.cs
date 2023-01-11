@@ -31,6 +31,10 @@
             this.MainMenu = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.Button();
+            this.PatientEntity1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,11 +73,56 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(351, 837);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 25);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Patient Entity: ";
+            // 
+            // Add
+            // 
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.Location = new System.Drawing.Point(1517, 832);
+            this.Add.Margin = new System.Windows.Forms.Padding(4);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(100, 38);
+            this.Add.TabIndex = 24;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = true;
+            // 
+            // Search
+            // 
+            this.Search.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search.Location = new System.Drawing.Point(1634, 832);
+            this.Search.Margin = new System.Windows.Forms.Padding(4);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(100, 38);
+            this.Search.TabIndex = 23;
+            this.Search.Text = "Search";
+            this.Search.UseVisualStyleBackColor = false;
+            // 
+            // PatientEntity1
+            // 
+            this.PatientEntity1.Location = new System.Drawing.Point(494, 840);
+            this.PatientEntity1.Margin = new System.Windows.Forms.Padding(4);
+            this.PatientEntity1.Name = "PatientEntity1";
+            this.PatientEntity1.Size = new System.Drawing.Size(1015, 22);
+            this.PatientEntity1.TabIndex = 22;
+            // 
             // PatientEntity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.Search);
+            this.Controls.Add(this.PatientEntity1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MainMenu);
@@ -83,6 +132,7 @@
             this.Load += new System.EventHandler(this.PatientEntity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -91,5 +141,9 @@
         private System.Windows.Forms.Button MainMenu;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.TextBox PatientEntity1;
     }
 }

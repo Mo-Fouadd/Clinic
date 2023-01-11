@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Confirm = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
             this.Finder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MainMenu = new System.Windows.Forms.Button();
             this.Searchbar = new System.Windows.Forms.TextBox();
-            this.Update = new System.Windows.Forms.Button();
+            this.Confirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Confirm
+            // Add
             // 
-            this.Confirm.Location = new System.Drawing.Point(772, 776);
-            this.Confirm.Name = "Confirm";
-            this.Confirm.Size = new System.Drawing.Size(116, 40);
-            this.Confirm.TabIndex = 11;
-            this.Confirm.Text = "Confirm";
-            this.Confirm.UseVisualStyleBackColor = true;
+            this.Add.Location = new System.Drawing.Point(1676, 909);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(116, 40);
+            this.Add.TabIndex = 11;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = true;
             // 
             // Finder
             // 
-            this.Finder.Location = new System.Drawing.Point(1563, 909);
+            this.Finder.Location = new System.Drawing.Point(1533, 909);
             this.Finder.Name = "Finder";
             this.Finder.Size = new System.Drawing.Size(116, 40);
             this.Finder.TabIndex = 10;
@@ -94,22 +94,22 @@
             this.Searchbar.Size = new System.Drawing.Size(1013, 30);
             this.Searchbar.TabIndex = 6;
             // 
-            // Update
+            // Confirm
             // 
-            this.Update.Location = new System.Drawing.Point(1386, 776);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(116, 40);
-            this.Update.TabIndex = 12;
-            this.Update.Text = "Update";
-            this.Update.UseVisualStyleBackColor = true;
+            this.Confirm.Location = new System.Drawing.Point(1019, 776);
+            this.Confirm.Name = "Confirm";
+            this.Confirm.Size = new System.Drawing.Size(116, 40);
+            this.Confirm.TabIndex = 12;
+            this.Confirm.Text = "Confirm";
+            this.Confirm.UseVisualStyleBackColor = true;
             // 
             // DrugSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.Update);
             this.Controls.Add(this.Confirm);
+            this.Controls.Add(this.Add);
             this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -127,12 +127,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Confirm;
+        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Finder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button MainMenu;
         private System.Windows.Forms.TextBox Searchbar;
-        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button Confirm;
     }
 }

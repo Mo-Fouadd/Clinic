@@ -54,7 +54,7 @@ namespace ClinicApplication
 
         private void NewMedicine_Click(object sender, EventArgs e)
         {
-            AddOrSearch_Drugs AoS = new AddOrSearch_Drugs(this);
+            DrugSearch AoS = new DrugSearch(this);
             AoS.Show();
         }
     }
