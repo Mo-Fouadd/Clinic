@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Search2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SearchBar = new System.Windows.Forms.TextBox();
+            this.MainMenu = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.Finder = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Confirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Search2
+            // SearchBar
             // 
-            this.Search2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search2.Location = new System.Drawing.Point(469, 927);
-            this.Search2.Name = "Search2";
-            this.Search2.Size = new System.Drawing.Size(1013, 30);
-            this.Search2.TabIndex = 0;
+            this.SearchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchBar.Location = new System.Drawing.Point(469, 927);
+            this.SearchBar.Name = "SearchBar";
+            this.SearchBar.Size = new System.Drawing.Size(1013, 30);
+            this.SearchBar.TabIndex = 0;
             // 
-            // button1
+            // MainMenu
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 59);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Back To Main Menu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.MainMenu.Location = new System.Drawing.Point(12, 12);
+            this.MainMenu.Name = "MainMenu";
+            this.MainMenu.Size = new System.Drawing.Size(167, 59);
+            this.MainMenu.TabIndex = 1;
+            this.MainMenu.Text = "Back To Main Menu";
+            this.MainMenu.UseVisualStyleBackColor = true;
+            this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
             // dataGridView1
             // 
@@ -114,27 +114,27 @@
             this.Finder.Text = "Find";
             this.Finder.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Confirm
             // 
-            this.button2.Location = new System.Drawing.Point(1021, 760);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 40);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Confirm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Confirm.Location = new System.Drawing.Point(1021, 760);
+            this.Confirm.Name = "Confirm";
+            this.Confirm.Size = new System.Drawing.Size(116, 40);
+            this.Confirm.TabIndex = 5;
+            this.Confirm.Text = "Confirm";
+            this.Confirm.UseVisualStyleBackColor = true;
+            this.Confirm.Click += new System.EventHandler(this.Confirm_Click);
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Search2);
+            this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.SearchBar);
             this.Name = "Search";
             this.Text = "Search";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -147,14 +147,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox Search2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox SearchBar;
+        private System.Windows.Forms.Button MainMenu;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telephone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Finder;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Confirm;
     }
 }

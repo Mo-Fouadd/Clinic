@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.MainMenu = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SearchBar = new System.Windows.Forms.TextBox();
+            this.Add = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Doses1 = new System.Windows.Forms.TextBox();
+            this.ID1 = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.Label();
             this.Doses = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -53,36 +53,36 @@
             this.MainMenu.UseVisualStyleBackColor = true;
             this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
-            // textBox4
+            // SearchBar
             // 
-            this.textBox4.Location = new System.Drawing.Point(678, 378);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(763, 22);
-            this.textBox4.TabIndex = 18;
+            this.SearchBar.Location = new System.Drawing.Point(678, 378);
+            this.SearchBar.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchBar.Name = "SearchBar";
+            this.SearchBar.Size = new System.Drawing.Size(763, 22);
+            this.SearchBar.TabIndex = 18;
             // 
-            // button2
+            // Add
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1035, 279);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.Location = new System.Drawing.Point(1035, 279);
+            this.Add.Margin = new System.Windows.Forms.Padding(4);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(100, 38);
+            this.Add.TabIndex = 17;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Search
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(540, 375);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Search.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search.Location = new System.Drawing.Point(540, 375);
+            this.Search.Margin = new System.Windows.Forms.Padding(4);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(100, 28);
+            this.Search.TabIndex = 16;
+            this.Search.Text = "Search";
+            this.Search.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -132,21 +132,21 @@
             this.label1.Text = "ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // Doses1
             // 
-            this.textBox2.Location = new System.Drawing.Point(534, 233);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1118, 22);
-            this.textBox2.TabIndex = 11;
+            this.Doses1.Location = new System.Drawing.Point(534, 233);
+            this.Doses1.Margin = new System.Windows.Forms.Padding(4);
+            this.Doses1.Name = "Doses1";
+            this.Doses1.Size = new System.Drawing.Size(1118, 22);
+            this.Doses1.TabIndex = 11;
             // 
-            // textBox1
+            // ID1
             // 
-            this.textBox1.Location = new System.Drawing.Point(534, 169);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1118, 22);
-            this.textBox1.TabIndex = 10;
+            this.ID1.Location = new System.Drawing.Point(534, 169);
+            this.ID1.Margin = new System.Windows.Forms.Padding(4);
+            this.ID1.Name = "ID1";
+            this.ID1.Size = new System.Drawing.Size(1118, 22);
+            this.ID1.TabIndex = 10;
             // 
             // ID
             // 
@@ -175,15 +175,15 @@
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.Doses);
             this.Controls.Add(this.ID);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SearchBar);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.Search);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Doses1);
+            this.Controls.Add(this.ID1);
             this.Controls.Add(this.MainMenu);
             this.Name = "PatientDoses";
             this.Text = "PatientJobs";
@@ -198,15 +198,15 @@
         #endregion
 
         private System.Windows.Forms.Button MainMenu;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox SearchBar;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button Search;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Doses1;
+        private System.Windows.Forms.TextBox ID1;
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Label Doses;
     }

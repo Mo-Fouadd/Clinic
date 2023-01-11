@@ -28,50 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.Search = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Add
             // 
-            this.button1.Location = new System.Drawing.Point(222, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(357, 81);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Add.Location = new System.Drawing.Point(222, 44);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(357, 81);
+            this.Add.TabIndex = 0;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // button2
+            // Search
             // 
-            this.button2.Location = new System.Drawing.Point(222, 159);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(357, 81);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Search.Location = new System.Drawing.Point(222, 159);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(357, 81);
+            this.Search.TabIndex = 1;
+            this.Search.Text = "Search";
+            this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
-            // button3
+            // Back
             // 
-            this.button3.Location = new System.Drawing.Point(222, 276);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(357, 81);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Back.Location = new System.Drawing.Point(222, 276);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(357, 81);
+            this.Back.TabIndex = 2;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
-            // AddOrSearch
+            // AddOrSearch_Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "AddOrSearch";
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Search);
+            this.Controls.Add(this.Add);
+            this.Name = "AddOrSearch_Patients";
             this.Text = "AddOrSearch";
             this.Load += new System.EventHandler(this.AddOrSearch_Load);
             this.ResumeLayout(false);
@@ -80,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.Button Back;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class DrugSearch
     {
@@ -32,8 +32,8 @@
             this.Finder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Search2 = new System.Windows.Forms.TextBox();
+            this.MainMenu = new System.Windows.Forms.Button();
+            this.Searchbar = new System.Windows.Forms.TextBox();
             this.Update = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,23 +76,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(1272, 630);
             this.dataGridView1.TabIndex = 8;
             // 
-            // button1
+            // MainMenu
             // 
-            this.button1.Location = new System.Drawing.Point(25, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 59);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Back To Main Menu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.MainMenu.Location = new System.Drawing.Point(25, 31);
+            this.MainMenu.Name = "MainMenu";
+            this.MainMenu.Size = new System.Drawing.Size(167, 59);
+            this.MainMenu.TabIndex = 7;
+            this.MainMenu.Text = "Back To Main Menu";
+            this.MainMenu.UseVisualStyleBackColor = true;
+            this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
-            // Search2
+            // Searchbar
             // 
-            this.Search2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search2.Location = new System.Drawing.Point(489, 911);
-            this.Search2.Name = "Search2";
-            this.Search2.Size = new System.Drawing.Size(1013, 30);
-            this.Search2.TabIndex = 6;
+            this.Searchbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Searchbar.Location = new System.Drawing.Point(489, 911);
+            this.Searchbar.Name = "Searchbar";
+            this.Searchbar.Size = new System.Drawing.Size(1013, 30);
+            this.Searchbar.TabIndex = 6;
             // 
             // Update
             // 
@@ -113,11 +113,12 @@
             this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Search2);
+            this.Controls.Add(this.MainMenu);
+            this.Controls.Add(this.Searchbar);
             this.Name = "DrugSearch";
             this.Text = "DrugSearch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.DrugSearch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -130,8 +131,8 @@
         private System.Windows.Forms.Button Finder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Search2;
+        private System.Windows.Forms.Button MainMenu;
+        private System.Windows.Forms.TextBox Searchbar;
         private System.Windows.Forms.Button Update;
     }
 }

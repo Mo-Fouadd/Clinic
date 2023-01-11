@@ -29,13 +29,14 @@ namespace ClinicApplication
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void MainMenu_Click(object sender, EventArgs e)
         {
             home.Show();
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Confirm_Click(object sender, EventArgs e)
         {
             Visit visit = new Visit(home);
             visit.Show();

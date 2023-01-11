@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class JobOccupationcs
     {
@@ -75,6 +75,7 @@
             this.Name = "JobOccupationcs";
             this.Text = "JobOccupationcs";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.JobOccupationcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

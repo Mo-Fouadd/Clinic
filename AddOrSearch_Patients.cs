@@ -18,16 +18,12 @@ namespace ClinicApplication
             InitializeComponent();
             this.home = home;
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void AddOrSearch_Load(object sender, EventArgs e)
         {
-            Search search= new Search(home);
-            search.Show();
-            this.Close();
-            home.Hide();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Add_Click(object sender, EventArgs e)
         {
             Add add = new Add(home);
             add.Show();
@@ -35,14 +31,17 @@ namespace ClinicApplication
             home.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Search_Click(object sender, EventArgs e)
         {
+            Search search = new Search(home);
+            search.Show();
             this.Close();
+            home.Hide();
         }
 
-        private void AddOrSearch_Load(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

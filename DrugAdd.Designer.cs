@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace ClinicApplication
 {
     partial class DrugAdd
     {
@@ -32,8 +32,8 @@
             this.Confirm = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DrugName = new System.Windows.Forms.TextBox();
+            this.DrugID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MainMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -76,21 +76,21 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Drug ID :";
             // 
-            // textBox2
+            // DrugName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(621, 561);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(847, 30);
-            this.textBox2.TabIndex = 10;
+            this.DrugName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrugName.Location = new System.Drawing.Point(621, 561);
+            this.DrugName.Name = "DrugName";
+            this.DrugName.Size = new System.Drawing.Size(847, 30);
+            this.DrugName.TabIndex = 10;
             // 
-            // textBox1
+            // DrugID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(621, 424);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(847, 30);
-            this.textBox1.TabIndex = 9;
+            this.DrugID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrugID.Location = new System.Drawing.Point(621, 424);
+            this.DrugID.Name = "DrugID";
+            this.DrugID.Size = new System.Drawing.Size(847, 30);
+            this.DrugID.TabIndex = 9;
             // 
             // label1
             // 
@@ -110,7 +110,7 @@
             this.MainMenu.TabIndex = 15;
             this.MainMenu.Text = "Back To Main Menu";
             this.MainMenu.UseVisualStyleBackColor = true;
-            this.MainMenu.Click += new System.EventHandler(this.button1_Click);
+            this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
             // DrugAdd
             // 
@@ -122,8 +122,8 @@
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DrugName);
+            this.Controls.Add(this.DrugID);
             this.Controls.Add(this.label1);
             this.Name = "DrugAdd";
             this.Text = "DrugMenu";
@@ -140,8 +140,8 @@
         private System.Windows.Forms.Button Confirm;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DrugName;
+        private System.Windows.Forms.TextBox DrugID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button MainMenu;
     }
