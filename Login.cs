@@ -18,7 +18,7 @@ namespace ClinicApplication
         {
             InitializeComponent();
         }
-        static string sql = "Data Source =DESKTOP-09565VK\\SQLEXPRESS; Initial Catalog =Clinic; Integrated Security =True ";
+        static string sql = "Data Source=DESKTOP-IV5FD4B\\SQLEXPRESS;Initial Catalog=FormBB;Integrated Security=True";
         SqlConnection con = new SqlConnection(sql);
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -36,25 +36,42 @@ namespace ClinicApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HomeScreen home = new HomeScreen(this);
             string username, password;
-
+            con.Open();
             username = usernameText.Text;
             password = passwordText.Text;
 
             try
             {
-                string querry = "SELECT * FROM Login WHERE username = '"+usernameText.Text+"' AND password = '"+passwordText.Text+"'";
+                //string querry = "SELECT * FROM Login WHERE username = '"+usernameText.Text+"' AND password = '"+passwordText.Text+"'";
+                string querry = "SELECT * FROM Login ";
                 SqlDataAdapter sda = new SqlDataAdapter(querry, con);
-
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
-                if(dtable.Rows.Count > 0)
+                DataTable te = new DataTable();
+                sda.Fill(te);
+                Doctor dr = new Doctor(usernameText.Text, passwordText.Text, "dr");
+                Secretary se = new Secretary(usernameText.Text, passwordText.Text, "sec");
+                
+                if (te.Rows.Count > 0 && Loader.d.user == dr.user && Loader.d.password== dr.password  )
                 {
+                    
                     username = usernameText.Text;
                     password = passwordText.Text;
 
+                    HomeScreen home = new HomeScreen(this);
                     home.Show();
+                    this.Hide();
+
+                }
+                 
+                else if (te.Rows.Count > 0 && Loader.s.user == se.user && Loader.s.password == se.password)
+
+                {
+
+                    username = usernameText.Text;
+                    password = passwordText.Text;
+
+                    SecretaryScreen ss = new SecretaryScreen(this);
+                    ss.Show();
                     this.Hide();
 
                 }

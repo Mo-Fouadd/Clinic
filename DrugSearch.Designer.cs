@@ -34,16 +34,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MainMenu = new System.Windows.Forms.Button();
             this.Searchbar = new System.Windows.Forms.TextBox();
-            this.Confirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(1257, 739);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Location = new System.Drawing.Point(2209, 1075);
+            this.Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(87, 32);
+            this.Add.Size = new System.Drawing.Size(174, 62);
             this.Add.TabIndex = 11;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
@@ -51,10 +50,10 @@
             // 
             // Finder
             // 
-            this.Finder.Location = new System.Drawing.Point(1150, 739);
-            this.Finder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Finder.Location = new System.Drawing.Point(1995, 1075);
+            this.Finder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Finder.Name = "Finder";
-            this.Finder.Size = new System.Drawing.Size(87, 32);
+            this.Finder.Size = new System.Drawing.Size(174, 62);
             this.Finder.TabIndex = 10;
             this.Finder.Text = "Find";
             this.Finder.UseVisualStyleBackColor = true;
@@ -64,30 +63,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(281, 740);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(234, 1077);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 26);
+            this.label1.Size = new System.Drawing.Size(171, 51);
             this.label1.TabIndex = 9;
             this.label1.Text = "Search:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(300, 106);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(438, 57);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(954, 512);
+            this.dataGridView1.Size = new System.Drawing.Size(1908, 985);
             this.dataGridView1.TabIndex = 8;
             // 
             // MainMenu
             // 
-            this.MainMenu.Location = new System.Drawing.Point(19, 25);
-            this.MainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainMenu.Location = new System.Drawing.Point(38, 48);
+            this.MainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(125, 48);
+            this.MainMenu.Size = new System.Drawing.Size(250, 92);
             this.MainMenu.TabIndex = 7;
             this.MainMenu.Text = "Back To Main Menu";
             this.MainMenu.UseVisualStyleBackColor = true;
@@ -96,35 +95,24 @@
             // Searchbar
             // 
             this.Searchbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchbar.Location = new System.Drawing.Point(367, 740);
-            this.Searchbar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Searchbar.Location = new System.Drawing.Point(429, 1077);
+            this.Searchbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Searchbar.Name = "Searchbar";
-            this.Searchbar.Size = new System.Drawing.Size(761, 26);
+            this.Searchbar.Size = new System.Drawing.Size(1518, 44);
             this.Searchbar.TabIndex = 6;
-            // 
-            // Confirm
-            // 
-            this.Confirm.Location = new System.Drawing.Point(729, 632);
-            this.Confirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Confirm.Name = "Confirm";
-            this.Confirm.Size = new System.Drawing.Size(87, 32);
-            this.Confirm.TabIndex = 12;
-            this.Confirm.Text = "Confirm";
-            this.Confirm.UseVisualStyleBackColor = true;
             // 
             // DrugSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 857);
-            this.Controls.Add(this.Confirm);
+            this.ClientSize = new System.Drawing.Size(2564, 1559);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Finder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.Searchbar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DrugSearch";
             this.Text = "DrugSearch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -143,6 +131,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button MainMenu;
         private System.Windows.Forms.TextBox Searchbar;
-        private System.Windows.Forms.Button Confirm;
     }
 }

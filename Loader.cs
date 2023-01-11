@@ -7,14 +7,36 @@ namespace ClinicApplication
 {
     public abstract class Loader
     {
-        static string sql = "Data Source =DESKTOP-09565VK\\SQLEXPRESS; Initial Catalog =Clinic; Integrated Security =True ";
+        static string sql = "Data Source=DESKTOP-IV5FD4B\\SQLEXPRESS;Initial Catalog=FormBB;Integrated Security=True";
         static public SqlConnection cona = new SqlConnection(sql);
+        static public SqlConnection cona1 = new SqlConnection(sql);
+
         //public Loader() { }
+        static public DataTable LoadAccounts()
+        {
+
+            cona.Open();
+            DataTable dt = new DataTable();
+            string query = "SELECT * FROM Login";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+             // dt.Rows[i][0].ToString()
+            cona.Close();
+            return dt;
+        }
+         
+        static DataTable te = LoadAccounts();
+        // patientss[i].Id = Convert.ToInt32(te.Rows[i][0].ToString());
+        static public Doctor d = new Doctor(te.Rows[0][0].ToString(), te.Rows[0][1].ToString(),"dr");
+        static public Secretary s = new Secretary(te.Rows[1][0].ToString(), te.Rows[1][1].ToString(), "sec");
+
+
         static public DataTable LoadUserTable()
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM patientsS";
+            string query = "SELECT * FROM patientsD";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -25,7 +47,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM patientsS WHERE Name LIKE '" + search + "%'";
+            string query = "SELECT * FROM patientsD WHERE Name LIKE '" + search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -49,7 +71,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM EntityD WHERE AuthName LIKE '" + search + "%'";
+            string query = "SELECT * FROM EntityD WHERE Name LIKE '" + search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -62,7 +84,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM drugS";
+            string query = "SELECT * FROM drugsD";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -73,7 +95,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM drugS WHERE Name LIKE '"+ search + "%'";
+            string query = "SELECT * FROM drugsD WHERE Name LIKE '"+ search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -84,7 +106,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM jobS";
+            string query = "SELECT * FROM jobD";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -95,7 +117,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM jobS WHERE JobName LIKE '"+ search + "%'";
+            string query = "SELECT * FROM jobD WHERE jobName LIKE '"+ search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -106,7 +128,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM DropS";
+            string query = "SELECT * FROM dosesD";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -117,7 +139,7 @@ namespace ClinicApplication
         {
             cona.Open();
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM DropS WHERE DropName LIKE '"+ search + "%'";
+            string query = "SELECT * FROM dosesD WHERE Name LIKE '"+ search + "%'";
             SqlCommand cmd = new SqlCommand(query, cona);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -244,10 +266,16 @@ namespace ClinicApplication
         static public void InsertToPatientTable(string name, int age ,int entity, long mobileNumber, long telephonenumber, double height, double weight, int occupation)
         {
             int visits = 1;
-            cona.Open();
-            string query = "INSERT INTO patientsS VALUES (@Name, @Age, @Job, @Entity, @Height, @Weight, @Mobile, @Mobile2, @Visits)";
+            cona1.Open();
+            
+            string query = "INSERT INTO patientsD VALUES (@Name, @Age, @Job, @Entity, @Height, @Weight, @Mobile, @Mobile2, @Visits)";
             SqlCommand cmd =  new SqlCommand(query);
-            cmd.Connection = cona;
+            cmd.Connection = cona1;
+           // DataTable dt = LoadUserTable();
+           // Patient[] p = new Patient[dt.Rows.Count];
+           
+            
+           // cmd.Parameters.AddWithValue("@id", p[dt.Rows.Count - 2].Id + 1);
             cmd.Parameters.AddWithValue("@Name", name);
             cmd.Parameters.AddWithValue("@Age", age);
             cmd.Parameters.AddWithValue("@Job", occupation);
@@ -259,16 +287,17 @@ namespace ClinicApplication
             cmd.Parameters.AddWithValue("@Visits", visits);
             
             cmd.ExecuteNonQuery();
-            cona.Close();
+            
+            cona1.Close();
             MessageBox.Show("Added!");
         } 
         static public void InsertToEntityTable(string name)
         {
             cona.Open();
-            string query = "INSERT INTO EntityD (AuthName) VALUES (@AuthName)";
+            string query = "INSERT INTO EntityD (Name) VALUES (@Name)";
             SqlCommand cmd =  new SqlCommand(query);
             cmd.Connection = cona;
-            cmd.Parameters.AddWithValue("@AuthName", name);
+            cmd.Parameters.AddWithValue("@Name", name);
             cmd.ExecuteNonQuery();
             cona.Close();
             MessageBox.Show("Added!");
@@ -277,7 +306,7 @@ namespace ClinicApplication
         static public void InsertToJobTable(string name)
         {
             cona.Open();
-            string query = "INSERT INTO jobS (JobName) VALUES (@JobName)";
+            string query = "INSERT INTO jobD (JobName) VALUES (@JobName)";
             SqlCommand cmd =  new SqlCommand(query);
             cmd.Connection = cona;
             cmd.Parameters.AddWithValue("@JobName", name);
@@ -289,10 +318,10 @@ namespace ClinicApplication
         static public void InsertToDrugTable(string name)
         {
             cona.Open();
-            string query = "INSERT INTO drugS (DrugName) VALUES (@DrugName)";
+            string query = "INSERT INTO drugsD (Name) VALUES (@Name)";
             SqlCommand cmd =  new SqlCommand(query);
             cmd.Connection = cona;
-            cmd.Parameters.AddWithValue("@DrugName", name);
+            cmd.Parameters.AddWithValue("@Name", name);
             cmd.ExecuteNonQuery();
             cona.Close();
             MessageBox.Show("Added!");
@@ -301,10 +330,10 @@ namespace ClinicApplication
         static public void InsertToDropTable(string Description)
         {
             cona.Open();
-            string query = "INSERT INTO DropS (DropDesc) VALUES (@DropDesc)";
+            string query = "INSERT INTO dosesD (Name) VALUES (@Name)";
             SqlCommand cmd =  new SqlCommand(query);
             cmd.Connection = cona;
-            cmd.Parameters.AddWithValue("@DropDesc", Description);
+            cmd.Parameters.AddWithValue("@Name", Description);
             cmd.ExecuteNonQuery();
             cona.Close();
             MessageBox.Show("Added!");

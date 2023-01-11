@@ -41,5 +41,10 @@ namespace ClinicApplication
             Loader.InsertToDrugTable(Searchbar.Text);
             dataGridView1.DataSource = Loader.LoadDrugsTable();
         }
+
+        private void Confirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

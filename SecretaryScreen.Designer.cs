@@ -37,13 +37,13 @@
             // 
             // PatientEntity
             // 
-            this.PatientEntity.BackColor = System.Drawing.Color.Green;
+            this.PatientEntity.BackColor = System.Drawing.Color.Orange;
             this.PatientEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientEntity.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PatientEntity.Location = new System.Drawing.Point(682, 503);
-            this.PatientEntity.Margin = new System.Windows.Forms.Padding(4);
+            this.PatientEntity.Location = new System.Drawing.Point(827, 813);
+            this.PatientEntity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PatientEntity.Name = "PatientEntity";
-            this.PatientEntity.Size = new System.Drawing.Size(699, 81);
+            this.PatientEntity.Size = new System.Drawing.Size(1048, 127);
             this.PatientEntity.TabIndex = 6;
             this.PatientEntity.Text = "Register Patient Entity";
             this.PatientEntity.UseVisualStyleBackColor = false;
@@ -51,13 +51,13 @@
             // 
             // PatientJobs
             // 
-            this.PatientJobs.BackColor = System.Drawing.Color.Green;
+            this.PatientJobs.BackColor = System.Drawing.Color.Orange;
             this.PatientJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientJobs.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PatientJobs.Location = new System.Drawing.Point(682, 383);
-            this.PatientJobs.Margin = new System.Windows.Forms.Padding(4);
+            this.PatientJobs.Location = new System.Drawing.Point(827, 625);
+            this.PatientJobs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PatientJobs.Name = "PatientJobs";
-            this.PatientJobs.Size = new System.Drawing.Size(699, 81);
+            this.PatientJobs.Size = new System.Drawing.Size(1048, 127);
             this.PatientJobs.TabIndex = 5;
             this.PatientJobs.Text = "Register Patient Jobs";
             this.PatientJobs.UseVisualStyleBackColor = false;
@@ -65,13 +65,13 @@
             // 
             // PatientVisit
             // 
-            this.PatientVisit.BackColor = System.Drawing.Color.Green;
+            this.PatientVisit.BackColor = System.Drawing.Color.Orange;
             this.PatientVisit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientVisit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PatientVisit.Location = new System.Drawing.Point(682, 249);
-            this.PatientVisit.Margin = new System.Windows.Forms.Padding(4);
+            this.PatientVisit.Location = new System.Drawing.Point(827, 416);
+            this.PatientVisit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PatientVisit.Name = "PatientVisit";
-            this.PatientVisit.Size = new System.Drawing.Size(699, 86);
+            this.PatientVisit.Size = new System.Drawing.Size(1048, 134);
             this.PatientVisit.TabIndex = 4;
             this.PatientVisit.Text = "Register Patient Visit";
             this.PatientVisit.UseVisualStyleBackColor = false;
@@ -79,13 +79,13 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Green;
+            this.Exit.BackColor = System.Drawing.Color.Orange;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Exit.Location = new System.Drawing.Point(682, 624);
-            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Location = new System.Drawing.Point(827, 1002);
+            this.Exit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(699, 81);
+            this.Exit.Size = new System.Drawing.Size(1048, 127);
             this.Exit.TabIndex = 7;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = false;
@@ -94,26 +94,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 32F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(844, 105);
+            this.label1.Location = new System.Drawing.Point(1070, 191);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 61);
+            this.label1.Size = new System.Drawing.Size(622, 98);
             this.label1.TabIndex = 8;
             this.label1.Text = "Secretary Screen";
             // 
             // SecretaryScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(2564, 1559);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.PatientEntity);
             this.Controls.Add(this.PatientJobs);
             this.Controls.Add(this.PatientVisit);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SecretaryScreen";
             this.Text = "SecretaryScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
