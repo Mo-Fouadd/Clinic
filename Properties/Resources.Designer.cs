@@ -59,5 +59,25 @@ namespace ClinicApplication.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20210913_WA0051 {
+            get {
+                object obj = ResourceManager.GetObject("IMG-20210913-WA0051", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20210913_WA00511 {
+            get {
+                object obj = ResourceManager.GetObject("IMG-20210913-WA00511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

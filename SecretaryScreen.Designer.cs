@@ -37,56 +37,66 @@
             // 
             // PatientEntity
             // 
+            this.PatientEntity.BackColor = System.Drawing.Color.Green;
             this.PatientEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientEntity.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PatientEntity.Location = new System.Drawing.Point(682, 503);
             this.PatientEntity.Margin = new System.Windows.Forms.Padding(4);
             this.PatientEntity.Name = "PatientEntity";
             this.PatientEntity.Size = new System.Drawing.Size(699, 81);
             this.PatientEntity.TabIndex = 6;
             this.PatientEntity.Text = "Register Patient Entity";
-            this.PatientEntity.UseVisualStyleBackColor = true;
+            this.PatientEntity.UseVisualStyleBackColor = false;
             this.PatientEntity.Click += new System.EventHandler(this.PatientEntity_Click);
             // 
             // PatientJobs
             // 
+            this.PatientJobs.BackColor = System.Drawing.Color.Green;
             this.PatientJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientJobs.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PatientJobs.Location = new System.Drawing.Point(682, 383);
             this.PatientJobs.Margin = new System.Windows.Forms.Padding(4);
             this.PatientJobs.Name = "PatientJobs";
             this.PatientJobs.Size = new System.Drawing.Size(699, 81);
             this.PatientJobs.TabIndex = 5;
             this.PatientJobs.Text = "Register Patient Jobs";
-            this.PatientJobs.UseVisualStyleBackColor = true;
+            this.PatientJobs.UseVisualStyleBackColor = false;
             this.PatientJobs.Click += new System.EventHandler(this.PatientJobs_Click);
             // 
             // PatientVisit
             // 
+            this.PatientVisit.BackColor = System.Drawing.Color.Green;
             this.PatientVisit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientVisit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PatientVisit.Location = new System.Drawing.Point(682, 249);
             this.PatientVisit.Margin = new System.Windows.Forms.Padding(4);
             this.PatientVisit.Name = "PatientVisit";
             this.PatientVisit.Size = new System.Drawing.Size(699, 86);
             this.PatientVisit.TabIndex = 4;
             this.PatientVisit.Text = "Register Patient Visit";
-            this.PatientVisit.UseVisualStyleBackColor = true;
+            this.PatientVisit.UseVisualStyleBackColor = false;
             this.PatientVisit.Click += new System.EventHandler(this.PatientVisit_Click);
             // 
             // Exit
             // 
+            this.Exit.BackColor = System.Drawing.Color.Green;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Exit.Location = new System.Drawing.Point(682, 624);
             this.Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(699, 81);
             this.Exit.TabIndex = 7;
             this.Exit.Text = "Exit";
-            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 32F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(844, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 61);
@@ -97,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);

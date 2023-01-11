@@ -61,5 +61,13 @@ namespace ClinicApplication
             DrugSearch AoS = new DrugSearch(this);
             AoS.Show();
         }
+
+        private void  button1_Click(object sender, EventArgs e)
+        {
+            DrugSearch q = new DrugSearch(this);
+            q.Show();
+            this.Hide();
+          
+        }
     }
 }
