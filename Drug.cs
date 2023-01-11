@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicApplication
 {
-    public class Drug
+    public class  Drug
     {
         int DrugId;
         public int drugid

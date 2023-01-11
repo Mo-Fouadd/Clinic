@@ -34,7 +34,8 @@ namespace ClinicApplication
             
         }
 
-        private void Back_Click(object sender, EventArgs e)
+
+        private void MainMenu_Click(object sender, EventArgs e)
         {
             home.Show();
             this.Close();

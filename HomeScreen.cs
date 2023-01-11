@@ -19,44 +19,43 @@ namespace ClinicApplication
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AddOrSearch addOrsearch = new AddOrSearch(this);
-            addOrsearch.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            PatientDoses patientjobs = new PatientDoses(this);
-            patientjobs.Show();
-            this.Hide();
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             Are_You_Sure frm= new Are_You_Sure(login);
             frm.Show();
         }
 
-
-        private void button3_Click(object sender, EventArgs e)
+        private void PatientVisit_Click(object sender, EventArgs e)
         {
-
+            AddOrSearch_Patients addOrsearch = new AddOrSearch_Patients(this);
+            addOrsearch.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void NewDoses_Click(object sender, EventArgs e)
+        {
+            PatientDoses patientjobs = new PatientDoses(this);
+            patientjobs.Show();
+            this.Hide();
+        }
+
+        private void PatientJobs_Click(object sender, EventArgs e)
+        {
+            JobOccupationcs job = new JobOccupationcs(this);
+            job.Show();
+            this.Hide();
+        }
+
+        private void PatientEntity_Click(object sender, EventArgs e)
         {
             PatientEntity patientEntity = new PatientEntity(this);
             patientEntity.Show();
             this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void NewMedicine_Click(object sender, EventArgs e)
         {
-            MedicineAddition potionAddition = new MedicineAddition(this);
-            potionAddition.Show();
-            this.Hide();
+            AddOrSearch_Drugs AoS = new AddOrSearch_Drugs(this);
+            AoS.Show();
         }
-
     }
 }

@@ -10,27 +10,33 @@ using System.Windows.Forms;
 
 namespace ClinicApplication
 {
-    public partial class AddOrSearch : Form
+    public partial class AddOrSearch_Drugs : Form
     {
         HomeScreen home;
-        public AddOrSearch(HomeScreen home)
+        public AddOrSearch_Drugs(HomeScreen home)
         {
             InitializeComponent();
             this.home = home;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void PotionAddition_Load(object sender, EventArgs e)
         {
-            Search search= new Search(home);
-            search.Show();
-            this.Close();
-            home.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Add add = new Add(home);
-            add.Show();
+            DrugAdd drug_add = new DrugAdd(home);
+            drug_add.Show();
+            this.Close();
+            home.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DrugSearch drugSearch = new DrugSearch(home);
+            drugSearch.Show();
             this.Close();
             home.Hide();
         }
@@ -38,11 +44,6 @@ namespace ClinicApplication
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void AddOrSearch_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

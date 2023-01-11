@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace ClinicApplication
 {
-    public partial class MedicineAddition : Form
+    public partial class DrugSearch : Form
     {
         HomeScreen home;
-        public MedicineAddition(HomeScreen home)
+        public DrugSearch(HomeScreen home)
         {
-            InitializeComponent();
             this.home = home;
+            InitializeComponent();
+        }
+
+        private void DrugSearch_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void MainMenu_Click(object sender, EventArgs e)
         {
             home.Show();
             this.Close();
-        }
-
-        private void PotionAddition_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
