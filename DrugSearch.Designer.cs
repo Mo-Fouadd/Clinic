@@ -39,7 +39,7 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(2209, 1075);
+            this.Add.Location = new System.Drawing.Point(2223, 841);
             this.Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(174, 62);
@@ -50,7 +50,7 @@
             // 
             // Finder
             // 
-            this.Finder.Location = new System.Drawing.Point(1995, 1075);
+            this.Finder.Location = new System.Drawing.Point(2009, 841);
             this.Finder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Finder.Name = "Finder";
             this.Finder.Size = new System.Drawing.Size(174, 62);
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(234, 1077);
+            this.label1.Location = new System.Drawing.Point(248, 843);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 51);
@@ -73,17 +73,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(438, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(795, 170);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1908, 985);
+            this.dataGridView1.Size = new System.Drawing.Size(1051, 563);
             this.dataGridView1.TabIndex = 8;
             // 
             // MainMenu
             // 
-            this.MainMenu.Location = new System.Drawing.Point(38, 48);
+            this.MainMenu.Location = new System.Drawing.Point(115, 35);
             this.MainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Size = new System.Drawing.Size(250, 92);
@@ -95,7 +95,7 @@
             // Searchbar
             // 
             this.Searchbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchbar.Location = new System.Drawing.Point(429, 1077);
+            this.Searchbar.Location = new System.Drawing.Point(443, 843);
             this.Searchbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Searchbar.Name = "Searchbar";
             this.Searchbar.Size = new System.Drawing.Size(1518, 44);

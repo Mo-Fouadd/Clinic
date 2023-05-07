@@ -10,6 +10,8 @@ namespace ClinicApplication
         static string sql = "Data Source=DESKTOP-IV5FD4B\\SQLEXPRESS;Initial Catalog=FormBB;Integrated Security=True";
         static public SqlConnection cona = new SqlConnection(sql);
         static public SqlConnection cona1 = new SqlConnection(sql);
+        static public SqlConnection cona2 = new SqlConnection(sql);
+
 
         //public Loader() { }
         static public DataTable LoadAccounts()
@@ -66,6 +68,37 @@ namespace ClinicApplication
             da.Fill(dt);
             cona.Close();
             return dt;
+        }
+        static public string Loadimg()
+        {
+            cona.Open();
+            DataTable te = new DataTable();
+           
+            string query = "SELECT * FROM imgg ";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            
+            da.Fill(te);
+            string b = te.Rows[0][1].ToString();
+            cona.Close();
+            return b;
+            
+        }
+        static public string LoadimgT()
+        {
+
+            cona.Open();
+            DataTable te = new DataTable();
+
+            string query = "SELECT * FROM imgg ";
+            SqlCommand cmd = new SqlCommand(query, cona);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            da.Fill(te);
+            string b = te.Rows[0][1].ToString();
+            cona.Close();
+            return b;
+
         }
         static public DataTable LoadEntityTable(string search)
         {
@@ -154,8 +187,10 @@ namespace ClinicApplication
         {
             DataTable te = new DataTable();
             te = LoadUserTable();
+            string b = te.Rows[0][1].ToString();
             Patient[] patientss = new Patient[te.Rows.Count];
             //int y = GetLen();
+
             int y = te.Rows.Count;
             int i = 0;
             for (i = 0; i < te.Rows.Count; i++)
@@ -341,12 +376,17 @@ namespace ClinicApplication
         }
 
 
-
-
+        void checc()
+        {
+            cona.Close();
+            cona1.Close();
+        }
+        
        
        
 
     }
+    
 }
 
 

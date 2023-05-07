@@ -35,6 +35,7 @@
             this.NewMedicine = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PatientVisit
@@ -43,7 +44,7 @@
             this.PatientVisit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientVisit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PatientVisit.Location = new System.Drawing.Point(1397, 503);
-            this.PatientVisit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PatientVisit.Margin = new System.Windows.Forms.Padding(6);
             this.PatientVisit.Name = "PatientVisit";
             this.PatientVisit.Size = new System.Drawing.Size(674, 134);
             this.PatientVisit.TabIndex = 0;
@@ -57,7 +58,7 @@
             this.NewDoses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewDoses.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.NewDoses.Location = new System.Drawing.Point(605, 503);
-            this.NewDoses.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.NewDoses.Margin = new System.Windows.Forms.Padding(6);
             this.NewDoses.Name = "NewDoses";
             this.NewDoses.Size = new System.Drawing.Size(674, 134);
             this.NewDoses.TabIndex = 1;
@@ -71,7 +72,7 @@
             this.PatientJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientJobs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PatientJobs.Location = new System.Drawing.Point(801, 722);
-            this.PatientJobs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PatientJobs.Margin = new System.Windows.Forms.Padding(6);
             this.PatientJobs.Name = "PatientJobs";
             this.PatientJobs.Size = new System.Drawing.Size(1048, 127);
             this.PatientJobs.TabIndex = 2;
@@ -85,7 +86,7 @@
             this.PatientEntity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientEntity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PatientEntity.Location = new System.Drawing.Point(801, 888);
-            this.PatientEntity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PatientEntity.Margin = new System.Windows.Forms.Padding(6);
             this.PatientEntity.Name = "PatientEntity";
             this.PatientEntity.Size = new System.Drawing.Size(1048, 127);
             this.PatientEntity.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.NewMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewMedicine.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.NewMedicine.Location = new System.Drawing.Point(801, 1055);
-            this.NewMedicine.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.NewMedicine.Margin = new System.Windows.Forms.Padding(6);
             this.NewMedicine.Name = "NewMedicine";
             this.NewMedicine.Size = new System.Drawing.Size(1048, 127);
             this.NewMedicine.TabIndex = 4;
@@ -113,7 +114,7 @@
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Exit.Location = new System.Drawing.Point(801, 1222);
-            this.Exit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Exit.Margin = new System.Windows.Forms.Padding(6);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(1048, 127);
             this.Exit.TabIndex = 5;
@@ -134,12 +135,23 @@
             this.label1.Text = "Dr Fouad ElNaggar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1078, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(300, 66);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(2287, 1559);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.NewMedicine);
@@ -147,7 +159,7 @@
             this.Controls.Add(this.PatientJobs);
             this.Controls.Add(this.NewDoses);
             this.Controls.Add(this.PatientVisit);
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -165,6 +177,7 @@
         private System.Windows.Forms.Button NewMedicine;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

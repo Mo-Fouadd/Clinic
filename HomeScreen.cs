@@ -69,5 +69,12 @@ namespace ClinicApplication
             this.Hide();
           
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Test t = new Test();
+            t.Show();
+            //this.Hide();
+        }
     }
 }

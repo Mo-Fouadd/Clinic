@@ -13,15 +13,15 @@ namespace ClinicApplication
     {
 
         int id;
-        public int Id { get { return id; } private set { } }
+        public int Id { get { return id; }  set { } }
         string name = "";
-        public string Name { get { return name; } private set { } }
+        public string Name { get { return name; }  set { } }
         int age = 0;
-        public int Age { get { return age; } private set { } }
+        public int Age { get { return age; }  set { } }
         int jobNo;
         public int JobNo { get { return jobNo; } set { if(value > 0) jobNo = value; } }
         Entity entity = new Entity();
-        public int EntityId { get { return entity.id; } private set { } }
+        public int EntityId { get { return entity.id; }  set {  } }
         public string EntityName { get { return entity.name; } set {if(value != null) entity.name = value; } }
         double weight;
         double height;
@@ -32,7 +32,7 @@ namespace ClinicApplication
         long homeNumber;
         public long HomeNumber { get { return homeNumber; } set { if(value > 0)homeNumber = value; } }
         int noOfVisits = 0;
-        public int NoOfVisits { get { return noOfVisits; } private set { } }
+        public int NoOfVisits { get { return noOfVisits; }  set { } }
 
         public Patient() { }
 
